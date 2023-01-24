@@ -1,0 +1,13 @@
+root = true
+
+[*]
+indent_style = space
+# Jeśli chcecie mieć odstępy w 4 spacje w html/css/js, zmieńcie tutaj 2 na 4
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = false
+
+
+[*.{json,md,yaml}]
+indent_size = 2
