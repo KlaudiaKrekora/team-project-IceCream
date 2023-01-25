@@ -23,11 +23,4 @@
     "posthtml-include": "^1.7.4"
   }
 }
-"{
-  "name": "name",
-  "description": "description",
-  "authors": "author",
-  "version": "1.0.0",
-  "main": "pathToMain",
-  "dependencies": {}
-}"
+
