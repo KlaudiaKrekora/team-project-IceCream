@@ -12,10 +12,85 @@
     />
   </head>
   <body>
+    <div class="header">
+      <div class="hero">
+        <img
+          class="hero__logo"
+          src="images/logohero.png"
+          alt="logo firmy"
+          srcset="images/logohero@2x.png 2x"
+        />
+        <nav class="hero__list">
+          <ul>
+            <li><a class="hero__list-item" href="#home">Home</a></li>
+            <li><a class="hero__list-item" href="#about">About us</a></li>
+            <li><a class="hero__list-item" href="#how it’s made?">How it’s made?</a></li>
+            <li><a class="hero__list-item" href="#our products">Our products</a></li>
+            <li><a class="hero__list-item" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <img src="images/hamburgericon.png" alt="logo firmy" />
+        </button>
+        <button class="hero__button-buy" type="button" data-modal-open>Buy now</button>
+      </div>
+      <h1 class="header__title">ice cream made with passion</h1>
+      <button class="header__button-first" type="button">
+        <a href="#our products">Products</a>
+      </button>
+      <button class="header__button-second" type="button">
+        <a href="#how it’s made?">How it’s made?</a>
+      </button>
+      <img
+        class="header__picture-main"
+        src="images/icecreamhero.png"
+        alt="kolorowe lody w wafelku"
+        srcset="images/icecreamhero@2x.png 2x"
+      />
+      <div class="header__circle"></div>
+      <p class="header__number">16</p>
+      <p class="header__number-descripion">cafes</p>
+      <div class="header__circle"></div>
+      <p class="header__number">230</p>
+      <p class="header__number-descripion">food trucks</p>
+      <div class="header__box">
+        <img
+          class="header__box-picture"
+          src="images/milkhero.png"
+          alt="mleko w dzbanku"
+          srcset="images/milkhero@2x.png 2x"
+        />
+        <div>
+          <p class="header__box-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <img
+            class="header__box-icon"
+            src="images/arrowhero.png"
+            alt="strzałka"
+            srcset="images/arrowhero@2x.png 2x"
+          />
+        </div>
+        <img
+          class="header__box-person"
+          src="images/sotasty.png"
+          alt="kobieta jedzaca lody"
+          srcset="images/sotasty@2x.png 2x"
+        />
+      </div>
+    </div>
+
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
     <include src="./partials/example.html"></include>
 
+    <div class="backdrop-modal is-hidden" data-modal>
+      <div class="modal"></div>
+      <button class="modal__button" data-modal-close>&times;</button>
+    </div>
+
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
     <script src="./index.js" type="module"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
