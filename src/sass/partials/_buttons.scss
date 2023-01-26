@@ -1,3 +1,28 @@
+// OKRĄGŁE BUTTONY
+
+// by wstawić przycisk ze strzałką, wpisać w HTML:
+// <button class="circle-btn"><svg width="5" height="18" class="circle-btn__arrow"><use href="images/icons.svg#icon-arrow-right"></use></svg></button>
+
+.circle-btn {
+  height: 18px;
+  width: 18px;
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  cursor: pointer;
+
+  &__arrow {
+    stroke: $brandColor;
+    stroke-width: 4px;
+  }
+
+  &:hover {
+    background-color: $hoverColor;
+  }
+}
+
+// DŁUGIE BUTTONY
+
 .button {
   padding: 0.9em 1.7em;
   font-family: $mainFont;
