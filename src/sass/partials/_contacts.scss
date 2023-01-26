@@ -1,0 +1,112 @@
+.contacts {
+  background-color: $fadedBgColor;
+  position: relative;
+  top: 84px;
+
+  &__header--main {
+    display: none;
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  &__item {
+    position: relative;
+    top: -84px;
+    background-color: $alpha;
+    padding: 43px 20px;
+    border-radius: 24px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    margin: auto 35px;
+  }
+
+  &__label {
+    color: $alpha;
+    font-size: 12px;
+    font-weight: $regular;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    line-height: 1.8;
+    border-radius: 4px;
+    background-color: $accentColor;
+    padding: 2px 12px;
+    text-align: center;
+    max-width: 80px;
+    margin-bottom: 25px;
+  }
+
+  &__header {
+    color: $beta;
+    font-size: 12px;
+    font-weight: $regular;
+    letter-spacing: 0.04em;
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: $fillerColor;
+    font-size: 12px;
+    font-weight: $regular;
+    letter-spacing: 0.06em;
+    line-height: 1.2;
+    white-space: wrap;
+    margin-bottom: 25px;
+  }
+
+  &__schedule {
+    margin: 25px 0;
+  }
+
+  &__title {
+    color: $beta;
+    font-size: 12px;
+    font-weight: $regular;
+    letter-spacing: 0.04em;
+    line-height: 1.8;
+  }
+
+  &__time {
+    color: $secondaryBrandColor;
+    font-size: 12px;
+    font-weight: $regular;
+    letter-spacing: 0.04em;
+    line-height: 1.8;
+    text-transform: uppercase;
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 25px;
+  }
+
+  &__link {
+    color: $fillerColor;
+    font-size: 12px;
+    font-weight: $regular;
+    letter-spacing: 0.06em;
+    line-height: 1.2;
+    text-decoration: none;
+    cursor: pointer;
+    font-style: normal;
+  }
+
+  &__button-group {
+    position: relative;
+    top: -54px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+}
