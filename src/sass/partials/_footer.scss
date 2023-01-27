@@ -1,7 +1,61 @@
 .footer {
   background-color: $fadedBgColor;
+  padding-top: 54px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 
-  &title {
-    text-transform: capitalize;
+  &__title {
+    width: 232px;
+    font-family: $accentFont;
+    text-transform: uppercase;
+    margin-bottom: 43px;
+
+    &--light {
+      color: $secondaryBrandColor;
+      font-size: 18px;
+      line-height: 100%;
+      margin-bottom: 17px;
+    }
+
+    &--bold {
+      color: $brandColor;
+      font-size: 34px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+    }
+  }
+  &__social-links {
+    display: inline-flex;
+    gap: 28px;
+    align-self: flex-end;
+    margin-bottom: 46px;
+  }
+  &__contact {
+    display: inline-flex;
+    margin-bottom: 43px;
+    align-self: flex-end;
+    font-size: 12px;
+  }
+  &__contact-title {
+    color: $beta;
+  }
+  &__contact-phone {
+    text-decoration: none;
+    color: $brandColor;
+  }
+  &__line {
+    position: absolute;
+    left: 0px;
+    bottom: 89px;
+    width: 100%;
+    color: $lineColor;
+  }
+  &__copy-rights {
+    width: 160px;
+    font-weight: $bold;
+    color: $fillerColor;
+    align-self: center;
+    padding-bottom: 25px;
   }
 }
