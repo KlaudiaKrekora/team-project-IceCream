@@ -5,11 +5,11 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './example';
-@import 'partials/typography';
-@import 'partials/global';
+@import './partials/typography';
+@import './partials/global';
 
 @import 'partials/gallery';
 
 @import 'partials/buttons';
 
-@import 'partials/footer';
+@import './partials/footer';

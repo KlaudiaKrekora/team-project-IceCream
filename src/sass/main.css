@@ -55,4 +55,76 @@
 }
 .gallery {
   background-image: linear-gradient(#fff5f6 40%, #fff 40%);
+}
+
+.circle-btn {
+  height: 18px;
+  width: 18px;
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.circle-btn__arrow {
+  stroke: #d41443;
+  stroke-width: 4px;
+}
+.circle-btn:hover {
+  background-color: #ecebeb;
+}
+
+.button {
+  padding: 0.9em 1.7em;
+  font-family: DM Sans;
+  border: none;
+  border-radius: 2em;
+  background-color: #d41443;
+  color: #fff;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #c7133e;
+}
+.button--reversed {
+  background-color: #fff;
+  color: #d41443;
+}
+.button--reversed:hover {
+  background-color: #ecebeb;
+}
+.button--small {
+  font-size: 8px;
+}
+.button--mid {
+  font-size: 14px;
+  font-weight: 700;
+}
+.button--big {
+  font-size: 16px;
+  font-weight: 700;
+}
+.button__chevron {
+  stroke: currentColor;
+  margin-left: 13px;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .button--mid {
+    padding: 0.85em 2.3em;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .button--small {
+    padding: 0.85em 1.6em;
+    font-size: 14px;
+  }
+}
+.footer {
+  background-color: #fff5f6;
+}
+.footertitle {
+  text-transform: capitalize;
 }/*# sourceMappingURL=main.css.map */
