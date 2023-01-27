@@ -1,0 +1,73 @@
+<header class="container header">
+  <div class="header__box">
+    <img
+      class="header__box-logo"
+      src="images/logohero.png"
+      alt="logo firmy"
+      srcset="images/logohero@2x.png 2x"
+    />
+    <nav class="nav">
+      <ul>
+        <li><a class="nav__link" href="#home">Home</a></li>
+        <li><a class="nav__link" href="#about">About us</a></li>
+        <li><a class="nav__link" href="#how it’s made?">How it’s made?</a></li>
+        <li><a class="nav__link" href="#our products">Our products</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <img src="images/hamburgericon.png" alt="logo firmy" />
+    </button>
+    <button class="button button--big" type="button" data-modal-open>Buy now</button>
+  </div>
+</header>
+<section class="hero">
+  <h1 class="hero__title">ice cream made with passion</h1>
+  <button class="button button--mid" type="button">
+    <a href="#our products">Products</a>
+  </button>
+  <button class="button button--mid" type="button">
+    <a href="#how it’s made?">How it’s made?</a>
+  </button>
+  <img
+    class="hero__main-image"
+    src="images/icecreamhero.png"
+    alt="kolorowe lody w wafelku"
+    srcset="images/icecreamhero@2x.png 2x"
+  />
+  <div class="hero__circle"></div>
+  <p class="hero__number">16</p>
+  <p class="hero__number-descripion">cafes</p>
+  <div class="hero__circle"></div>
+  <p class="hero__number">230</p>
+  <p class="hero__number-descripion">food trucks</p>
+  <div class="hero__box">
+    <img
+      class="hero__box-picture"
+      src="images/milkhero.png"
+      alt="mleko w dzbanku"
+      srcset="images/milkhero@2x.png 2x"
+    />
+    <div>
+      <p class="hero__box-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <button class="circle-btn">
+        <svg width="5" height="18" class="circle-btn__arrow">
+          <use href="images/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+    <img
+      class="hero__box-person"
+      src="images/sotasty.png"
+      alt="kobieta jedzaca lody"
+      srcset="images/sotasty@2x.png 2x"
+    />
+  </div>
+</section>
+<div class="backdrop-modal is-hidden" data-modal>
+  <div class="modal"></div>
+  <button class="modal__button" data-modal-close>&times;</button>
+</div>
