@@ -21,6 +21,12 @@
         margin-bottom: 15px;
         letter-spacing: 0.04em;
     }
+    &____paragraph {
+        font-family: $mainFont;
+        font-weight: $bold;
+        font-size: 12px;
+        line-height: 1.66;
+    }
 }
 
 .advantages__second-heading--image1::before {
