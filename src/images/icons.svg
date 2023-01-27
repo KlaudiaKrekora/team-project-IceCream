@@ -6,6 +6,10 @@
 <symbol id="icon-arrow-right" viewBox="0 0 32 32">
 <path d="M29.177 16l-10.036 8.313 0.859 1.020 12-10.028-12-9.972-0.86 1.019 10.039 8.315h-29.179v1.333h29.177z"></path>
 </symbol>
+<symbol id="icon-close-btn" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.519 2l26.963 28"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2 29.481l28-26.963"></path>
+</symbol>
 </defs>
 </svg>
 
