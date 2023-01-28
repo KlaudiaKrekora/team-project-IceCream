@@ -4,7 +4,6 @@ const swiper = new Swiper('.swiper', {
   },
   speed: 1000,
   loop: true,
-
   pagination: {
     el: '.swiper-pagination',
   },
