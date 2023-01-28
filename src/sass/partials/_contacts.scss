@@ -113,6 +113,10 @@
     gap: 10px;
   }
 
+  &__button {
+    @extend .button;
+  }
+
   &__line {
     height: 1px;
     background-color: $lineColor;
