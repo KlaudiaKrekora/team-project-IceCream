@@ -7,17 +7,22 @@
 @import './example';
 @import 'partials/typography';
 @import 'partials/global';
+feature/css-styles
+@import 'partials/gallery';
+@import 'partials/buttons';
+@import 'partials/contacts';
+@import 'partials/ellipsis';
+
 feature/reviews-mobile-styles
 
 
-main
-@import 'partials/buttons';
+
+
 @import 'partials/advantages';
-@import 'partials/ellipsis';
-<feature/reviews-mobile-styles
-@import 'partials/gallery';
+
 
 @import 'partials/reviews';
 
 
  main
+
