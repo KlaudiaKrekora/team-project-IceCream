@@ -1,0 +1,41 @@
+// aby umieścić symbol trzech kropek, wstaw w html:
+// <div class="ellipsis"></div> -- dla białych kropek
+// <div class="ellipsis ellipsis--reversed"></div> -- dla czerwonych kropek
+
+%single-ellipsis {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+}
+
+.ellipsis {
+  @extend %single-ellipsis;
+  position: relative;
+  margin: 0 auto;
+  background-color: $alpha;
+
+  &::before {
+    @extend %single-ellipsis;
+    content: '';
+    position: absolute;
+    right: 10px;
+    background-color: $alpha;
+  }
+
+  &::after {
+    @extend %single-ellipsis;
+    content: '';
+    position: absolute;
+    left: 10px;
+    background-color: $alpha;
+  }
+  &--reversed {
+    background-color: $brandColorDarker;
+    &::after {
+      background-color: $brandColorDarker;
+    }
+    &::before {
+      background-color: $brandColorDarker;
+    }
+  }
+}
