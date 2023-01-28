@@ -36,6 +36,10 @@
   font-family: DM Sans;
 }
 
+.list {
+  list-style: none;
+}
+
 .container {
   max-width: 480px;
   margin: 0 auto;
@@ -134,24 +138,15 @@
   font-family: Titan One;
   text-transform: uppercase;
   margin-bottom: 43px;
-}
-.footer__title--light {
   color: #ffa5ba;
   font-size: 18px;
   line-height: 100%;
-  margin-bottom: 17px;
 }
 .footer__title--bold {
   color: #d41443;
   font-size: 34px;
-  line-height: 100%;
   letter-spacing: 0.04em;
-}
-.footer__social-links {
-  display: inline-flex;
-  gap: 28px;
-  align-self: flex-end;
-  margin-bottom: 46px;
+  margin-top: 17px;
 }
 .footer__contact {
   display: inline-flex;
@@ -179,4 +174,11 @@
   color: #907e82;
   align-self: center;
   padding-bottom: 25px;
+}
+
+.socials {
+  display: inline-flex;
+  gap: 28px;
+  align-self: flex-end;
+  margin-bottom: 46px;
 }/*# sourceMappingURL=main.css.map */
