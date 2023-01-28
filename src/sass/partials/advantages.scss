@@ -5,7 +5,7 @@
         padding-top: 66px;
         position: relative;
     }
-    &__heading-hiden {
+    &__heading-hidden {
         visibility: hidden;
     }
     &__list {
@@ -29,7 +29,7 @@
     }
 }
 
-.advantages__second-heading--image1::before {
+.advantages__second-heading--image-first::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -45,7 +45,7 @@
     }
 }
 
-.advantages__second-heading--image2::before {
+.advantages__second-heading--image-second::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -61,7 +61,7 @@
     }
 }
 
-.advantages__second-heading--image3::before {
+.advantages__second-heading--image-third::before {
     position: absolute;
     top: 0;
     left: 0;
