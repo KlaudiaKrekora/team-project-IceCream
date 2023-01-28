@@ -1,0 +1,113 @@
+:root {
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+}
+
+.reviews__container {
+  padding-top: 20px;
+}
+
+.customer {
+  text-align: center;
+
+  &__opinion-box {
+    position: relative;
+    margin: 30px auto;
+    padding: 40px 50px 20px;
+    background-color: $alphaDarker;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 26px;
+      left: 61px;
+      display: block;
+      height: 40px;
+      width: 54px;
+      background-image: url('../images/quotation-marks.png');
+      z-index: 0;
+    }
+  }
+
+  &__opinion-text {
+    position: relative;
+    padding: 0 18px;
+    font-size: 12px;
+    font-weight: $regular;
+    line-height: 2.51;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 29px,
+      $lineColor 29px,
+      $lineColor 30px
+    );
+    z-index: 1;
+  }
+
+  &__name {
+    margin-top: 18px;
+    font-size: 14px;
+    font-weight: $regular;
+  }
+}
+
+.swiper {
+  padding-bottom: 56px !important;
+
+  &-pagination-bullet-active {
+    border-radius: 0 !important;
+    background: url('../images/home-icon.png') !important;
+  }
+}
+
+@media (width>=768px) {
+  .reviews__container {
+    padding-inline: 74px;
+  }
+  .customer {
+    &__opinion-box {
+      margin: 19px auto 24px;
+
+      &::after {
+        left: 30px;
+      }
+    }
+
+    &__opinion-text {
+      font-size: 14px;
+      line-height: 2.16;
+    }
+
+    &__name {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (width>=1280px) {
+  .reviews__container {
+    padding-inline: 176px;
+  }
+
+  .customer {
+    &__opinion-box {
+      margin: 15px auto;
+
+      &::after {
+        left: 42px;
+      }
+    }
+
+    &__opinion-text {
+      padding-bottom: 2px;
+      font-size: 16px;
+      line-height: 1.86;
+    }
+
+    &__name {
+      font-size: 20px;
+    }
+  }
+}
