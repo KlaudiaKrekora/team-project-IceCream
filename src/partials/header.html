@@ -1,4 +1,4 @@
-<header class="container header">
+<header class="header">
   <div class="header__box">
     <img
       class="header__box-logo"
@@ -18,18 +18,34 @@
     <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
       <img src="images/hamburgericon.png" alt="logo firmy" />
     </button>
-    <button class="button button--big" type="button" data-modal-open>Buy now</button>
+    <button class="header__box-btn" type="button" data-modal-open>Buy now</button>
   </div>
 </header>
 <section class="hero">
-  <h1 class="hero__title">ice cream made with passion</h1>
-  <button class="button button--mid" type="button">
-    <a href="#our products">Products</a>
-  </button>
-  <button class="button button--mid" type="button">
-    <a href="#how it’s made?">How it’s made?</a>
-  </button>
+  <div class="hero__container">
+    <h1 class="hero__title">
+      Ice cream<br />
+      made with<br />
+      <span class="hero__title hero__title--boldred">passion</span>
+    </h1>
+    <button class="button button--mid" type="button">
+      <a class="button-link" href="#our products">Products</a>
+    </button>
+    <button class="button button--mid button--reversed" type="button">
+      <a class="button-link__second" href="#how it’s made?">How it’s made?</a>
+    </button>
+  </div>
+  <!-- <div width="346px" height="344px" class="hero__main"> -->
   <img
+    class="hero__bg-image"
+    width="346px"
+    height="344px"
+    src="images/circlebg.png"
+    alt="różowe koło"
+  />
+  <img
+    width="171px"
+    height="410px"
     class="hero__main-image"
     src="images/icecreamhero.png"
     alt="kolorowe lody w wafelku"
@@ -38,9 +54,11 @@
   <div class="hero__circle"></div>
   <p class="hero__number">16</p>
   <p class="hero__number-descripion">cafes</p>
+
   <div class="hero__circle"></div>
   <p class="hero__number">230</p>
   <p class="hero__number-descripion">food trucks</p>
+
   <div class="hero__box">
     <img
       class="hero__box-picture"

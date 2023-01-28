@@ -1,0 +1,97 @@
+.header {
+  background-color: $complementaryColor;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 20px;
+
+    &-btn {
+      display: none;
+    }
+  }
+}
+.menu-toggle {
+  background-color: $complementaryColor;
+  border: none;
+}
+.nav {
+  display: none;
+}
+.hero {
+  background-color: $complementaryColor;
+  position: relative;
+  margin: 0 auto;
+  background-size: cover;
+
+  &__bg-image {
+    position: absolute;
+    top: 21px;
+    left: 36px;
+  }
+
+  &__main-image {
+    position: relative;
+    top: 31px;
+    left: 117px;
+    z-index: 1;
+  }
+
+  &__container {
+    position: absolute;
+    top: 131px;
+    left: 20px;
+    z-index: 2;
+  }
+
+  &__title {
+    font-family: $accentFont;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0.04em;
+    color: $alpha;
+    text-transform: uppercase;
+    line-height: 1.86rem;
+    background-color: transparent;
+    margin-bottom: 20px;
+
+    &--boldred {
+      font-size: 48px;
+      color: $brandColor;
+      line-height: 2.87rem;
+    }
+  }
+
+  &___circle {
+    display: none;
+  }
+
+  &__box {
+    display: none;
+  }
+
+  &__number {
+    display: none;
+
+    &-descripion {
+      display: none;
+    }
+  }
+}
+.button-link {
+  font-family: $mainFont;
+  text-decoration: none;
+  font-size: 8px;
+  font-weight: 400;
+  color: $alpha;
+}
+.button-link__second {
+  @extend .button-link;
+  color: $brandColor;
+}
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
