@@ -3,7 +3,7 @@
   position: relative;
   top: 84px;
 
-  &__header--main {
+  &__caption {
     display: none;
   }
 
@@ -12,6 +12,8 @@
     display: flex;
     gap: 20px;
     flex-direction: column;
+    justify-content: center;
+    margin: auto 35px;
   }
 
   &__item {
@@ -21,7 +23,6 @@
     padding: 43px 20px;
     border-radius: 24px;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    margin: auto 35px;
   }
 
   &__label {
@@ -30,13 +31,16 @@
     font-weight: $regular;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    line-height: 1.8;
     border-radius: 4px;
     background-color: $accentColor;
-    padding: 2px 12px;
-    text-align: center;
+    padding: 1px 24px;
     max-width: 80px;
     margin-bottom: 25px;
+  }
+
+  &__label--secondary {
+    background-color: $secondaryAccentColor;
+    max-width: 130px;
   }
 
   &__header {
@@ -44,16 +48,16 @@
     font-size: 12px;
     font-weight: $regular;
     letter-spacing: 0.04em;
-    line-height: 1.8;
     margin-bottom: 10px;
+    line-height: 1.8;
   }
 
   &__text {
     color: $fillerColor;
     font-size: 12px;
     font-weight: $regular;
-    letter-spacing: 0.06em;
-    line-height: 1.2;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
     white-space: wrap;
     margin-bottom: 25px;
   }
@@ -75,8 +79,12 @@
     font-size: 12px;
     font-weight: $regular;
     letter-spacing: 0.04em;
-    line-height: 1.8;
+    line-height: 1.9;
     text-transform: uppercase;
+
+    &:not(last-of-type) {
+      margin-bottom: 10px;
+    }
   }
 
   &__address {
@@ -90,8 +98,7 @@
     color: $fillerColor;
     font-size: 12px;
     font-weight: $regular;
-    letter-spacing: 0.06em;
-    line-height: 1.2;
+    letter-spacing: 0.04em;
     text-decoration: none;
     cursor: pointer;
     font-style: normal;
@@ -102,11 +109,147 @@
     top: -54px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
+  }
+
+  &__line {
+    height: 1px;
+    background-color: $lineColor;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .contacts {
+    top: 78px;
+
+    &__list {
+      gap: 20px;
+      flex-direction: row;
+      margin: auto 21px;
+    }
+
+    &__item {
+      top: -78px;
+      padding: 50px 31px;
+    }
+
+    &__label {
+      font-size: 16px;
+      border-radius: 6px;
+      padding: 5px 16px;
+      max-width: 73px;
+      margin-bottom: 30px;
+    }
+
+    &__label--secondary {
+      background-color: $secondaryAccentColor;
+      max-width: 138px;
+    }
+
+    &__header {
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+
+    &__text {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    &__schedule {
+      margin: 30px 0;
+    }
+
+    &__title {
+      font-size: 14px;
+    }
+
+    &__time {
+      font-size: 14px;
+
+      &:not(last-of-type) {
+        margin-bottom: 16px;
+      }
+    }
+
+    &__address {
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    &__link {
+      font-size: 14px;
+    }
+
+    &__button-group {
+      top: 3px;
+      flex-direction: row;
+      justify-content: center;
+      gap: 14px;
+    }
+  }
 }
-@media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 1280px) {
+  .contacts {
+    top: 102px;
+    background-image: url('../images/sectionbg2.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    &__list {
+      gap: 30px;
+      margin: auto 100px;
+    }
+
+    &__item {
+      top: -102px;
+      padding: 51px 42px;
+    }
+
+    &__label {
+      margin-bottom: 32px;
+    }
+
+    &__header {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+
+    &__schedule {
+      margin: 32px 0;
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+
+    &__time {
+      font-size: 16px;
+
+      &:not(last-of-type) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__address {
+      gap: 10px;
+      margin-top: 32px;
+    }
+
+    &__link {
+      font-size: 16px;
+    }
+
+    &__button-group {
+      top: -16px;
+      gap: 15px;
+    }
+  }
 }
