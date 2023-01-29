@@ -6,8 +6,8 @@
       alt="logo firmy"
       srcset="images/logohero@2x.png 2x"
     />
-    <nav class="nav">
-      <ul>
+    <nav>
+      <ul class="nav">
         <li><a class="nav__link" href="#home">Home</a></li>
         <li><a class="nav__link" href="#about">About us</a></li>
         <li><a class="nav__link" href="#how it’s made?">How it’s made?</a></li>
@@ -18,7 +18,12 @@
     <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
       <img src="images/hamburgericon.png" alt="logo firmy" />
     </button>
-    <button class="header__box-btn" type="button" data-modal-open>Buy now</button>
+    <button class="button button--reversed" type="button" data-modal-open>
+      Buy now
+      <svg width="6" height="10" class="button__chevron">
+        <use href="images/icons.svg#icon-Vector-1"></use>
+      </svg>
+    </button>
   </div>
 </header>
 <section class="hero">
@@ -36,13 +41,7 @@
     </button>
   </div>
   <!-- <div width="346px" height="344px" class="hero__main"> -->
-  <img
-    class="hero__bg-image"
-    width="346px"
-    height="344px"
-    src="images/circlebg.png"
-    alt="różowe koło"
-  />
+  <div class="hero__bg-image" width="346px" height="344px"></div>
   <img
     width="171px"
     height="410px"
@@ -66,7 +65,7 @@
       alt="mleko w dzbanku"
       srcset="images/milkhero@2x.png 2x"
     />
-    <div>
+    <div class="hero__box-bottom">
       <p class="hero__box-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et
