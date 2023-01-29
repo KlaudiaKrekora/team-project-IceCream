@@ -1,0 +1,22 @@
+
+
+.section-about__label {
+    color: $secondaryBrandColor;
+    font-family: $accentFont;
+    font-weight: $thick;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section_about__heading {
+    color: $brandColor;
+    font-family: $accentFont;
+    font-weight: $thick;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
