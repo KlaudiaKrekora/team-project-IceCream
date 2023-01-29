@@ -5,6 +5,11 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './example';
+ feature/footer-styles
+
+
+@import './partials/footer';
+
 @import 'partials/typography';
 @import 'partials/global';
 feature/css-styles
@@ -16,8 +21,6 @@ feature/css-styles
 feature/reviews-mobile-styles
 
 
-
-
 @import 'partials/advantages';
 
 
@@ -25,4 +28,5 @@ feature/reviews-mobile-styles
 
 
  main
+
 
