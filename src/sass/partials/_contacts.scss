@@ -1,7 +1,7 @@
 .contacts {
-  background-color: $fadedBgColor;
+  background: linear-gradient(to bottom, $alpha 84px, $fadedBgColor 84px);
   position: relative;
-  top: 84px;
+  margin-top: 86px;
 
   &__caption {
     display: none;
@@ -13,16 +13,19 @@
     gap: 20px;
     flex-direction: column;
     justify-content: center;
-    margin: auto 35px;
+    margin: 0 35px 54px 35px;
   }
 
   &__item {
     position: relative;
-    top: -84px;
     background-color: $alpha;
     padding: 43px 20px;
     border-radius: 24px;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+    &:hover {
+      box-shadow: 5px 5px 30px -12px rgba(212, 20, 67, 0.6);
+    }
   }
 
   &__label {
@@ -106,7 +109,6 @@
 
   &__button-group {
     position: relative;
-    top: -54px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,7 +116,40 @@
   }
 
   &__button {
-    @extend .button;
+    color: $alpha;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: $brandColor;
+    border: none;
+    border-radius: 22px;
+    padding: 13px 17px;
+    line-height: 1.3;
+    transition: all 0.1s linear;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      transform: translateY(-3px);
+      box-shadow: 1px 1px 7px 1px rgba(212, 20, 67, 0.6);
+    }
+
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__button--secondary {
+    color: $brandColor;
+    background-color: $alpha;
+    padding: 12px 33px;
+    box-shadow: inset 0 0 0 0 $hoverColor;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 100px 0 0 0 $hoverColor;
+    }
   }
 
   &__line {
@@ -125,16 +160,16 @@
 
 @media screen and (min-width: 768px) {
   .contacts {
-    top: 78px;
+    background: linear-gradient(to bottom, $alpha 78px, $fadedBgColor 78px);
+    margin-top: 119px;
 
     &__list {
       gap: 20px;
       flex-direction: row;
-      margin: auto 21px;
+      margin: 0 21px 81px 21px;
     }
 
     &__item {
-      top: -78px;
       padding: 50px 31px;
     }
 
@@ -187,28 +222,36 @@
     }
 
     &__button-group {
-      top: 3px;
       flex-direction: row;
       justify-content: center;
       gap: 14px;
+    }
+
+    &__button {
+      padding: 12px 32px;
+    }
+
+    &__button--secondary {
+      padding: 12px 40px;
     }
   }
 }
 
 @media screen and (min-width: 1280px) {
   .contacts {
-    top: 102px;
-    background-image: url('../images/sectionbg2.png');
-    background-size: 100%;
+    background-image: url('../images/sectionbg2.png'),
+      linear-gradient(to bottom, $alpha 102px, $fadedBgColor 102px);
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 132px;
 
     &__list {
       gap: 30px;
-      margin: auto 100px;
+      margin: 0 100px 86px 100px;
     }
 
     &__item {
-      top: -102px;
       padding: 51px 42px;
     }
 
@@ -252,8 +295,15 @@
     }
 
     &__button-group {
-      top: -16px;
       gap: 15px;
+    }
+
+    &__button {
+      padding: 12px 35px;
+    }
+
+    &__button--secondary {
+      padding: 12px 43px;
     }
   }
 }
