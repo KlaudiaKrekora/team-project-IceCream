@@ -4,15 +4,29 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-@import './example';
+
+// TYPOGRAPHY
 @import 'partials/typography';
+// GLOBAL
 @import 'partials/global';
+// BUTTONS
 @import 'partials/buttons';
+// ELLIPSIS
 @import 'partials/ellipsis';
-
+// HEADER
+@import 'partials/header';
+// MENU
+@import 'partials/menu';
+// GALLERY
 @import 'partials/gallery';
-@import 'partials/contacts';
-
+// ADVANTAGES
 @import 'partials/advantages';
-
+// REVIEWS
 @import 'partials/reviews';
+// CONTACTS
+@import 'partials/contacts';
+// FOOTER
+@import './partials/footer';
+//MODAL
+@import 'partials/modal';
+

@@ -1,8 +1,9 @@
 .advantages {
     background-color: $fadedBgColor;
-    padding: 0 5px 97px;
+    padding: 0 0 59px;
     &__item {
         padding-top: 66px;
+        margin-bottom: 38px;
         position: relative;
     }
     &__heading-hidden {
@@ -50,7 +51,7 @@
     top: 0;
     left: 0;
     content: '';
-    width: 33px;
+    width: 50px;
     height: 50px;
     background-image: url('../images/icon2.png');
     background-position: center;
@@ -74,5 +75,41 @@
     background-size: contain;
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../images/icon3@x2.png');
+    }
+}
+
+@media (min-width: 768px) {
+    .advantages {
+        &__list {
+            display: flex;
+            gap: 60px;
+            flex-wrap: nowrap;
+        }
+        &__second-heading {
+            margin-top: 15px;
+            font-size: 48px;
+            line-height: 1.14;
+        }
+        &paragraph {
+            font-size: 14px;
+            line-height: 1.71;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .advantages {
+        background-color: rgba($color: $fadedBgColor, $alpha: 0.3);
+        &__list {
+            gap: 100px;
+        }
+        &__second-heading {
+            font-size: 58px;
+            line-height: 1.13;
+        }
+        &paragraph {
+            font-size: 16px;
+            line-height: 1.75;
+        }
     }
 }
