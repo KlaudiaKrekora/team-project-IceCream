@@ -5,6 +5,7 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './example';
+
 @import './partials/typography';
 @import './partials/global';
 @import './partials/gallery';
@@ -13,3 +14,6 @@
 @import './partials/ellipsis';
 @import './partials/advantages';
 @import './partials/reviews';
+@import './partials/footer';
+@import './partials/header';
+@import './partials/modal';

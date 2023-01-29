@@ -15,6 +15,7 @@
 // Add default icon fill (inherit from parent color attribute)
 .icon {
   fill: currentColor;
+  stroke: currentColor;
 }
 
 @media screen and (min-width: 768px) {
