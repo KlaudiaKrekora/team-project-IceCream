@@ -53,13 +53,13 @@
   }
 }
 
-.swiper {
-  padding-bottom: 56px !important;
+.swiper.swiper-initialized {
+  padding-bottom: 56px;
+}
 
-  &-pagination-bullet-active {
-    border-radius: 0 !important;
-    background: url('../images/home-icon.png') !important;
-  }
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  border-radius: 0;
+  background: url('../images/home-icon.png');
 }
 
 @media (width>=768px) {
