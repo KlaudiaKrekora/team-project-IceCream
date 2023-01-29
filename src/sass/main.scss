@@ -5,11 +5,21 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './example';
+// TYPOGRAPHY
 @import 'partials/typography';
+// GLBOAL
 @import 'partials/global';
 // GALLERY
 @import 'partials/gallery';
-
+// BUTTONS
 @import 'partials/buttons';
 // MENU
 @import 'partials/menu';
+// CONTACTS
+@import 'partials/contacts';
+// ELLIPSIS
+@import 'partials/ellipsis';
+// ADVANTAGES
+@import 'partials/advantages';
+// REVIEWS
+@import 'partials/reviews';

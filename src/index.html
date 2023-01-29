@@ -16,27 +16,30 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   </head>
 
   <body>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
+    <!-- HEADER -->
     <include src="./partials/header.html"></include>
+    <!-- PRODUCTS-->
     <include src="./partials/products.html"></include>
-
+    <!-- ADVANTAGES-->
     <include src="./partials/advantages.html"></include>
     <!-- GALLERY -->
     <include src="./partials/gallery.html"></include>
-
+    <!-- CONTACTS-->
     <include src="./partials/contacts.html"></include>
     <!-- MOBILE / TABLET MENU -->
     <include src="./partials/menu.html"></include>
+    <!-- REVIEWS -->
+    <include src="./partials/reviews.html"></include>
+    <!-- CONTACTS -->
+    <include src="./partials/contacts.html"></include>
+
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./index.js" type="module"></script>
     <script src="js/modal.js"></script>
     <script src="js/mobile-menu.js"></script>
