@@ -8,16 +8,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: visibility 500ms linear, opacity 500ms linear;
+  transition: visibility 200ms linear, opacity 200ms linear;
 }
 .modal {
   position: absolute;
-  min-width: 450px;
+  width: 200px;
+  height: 400px;
+  min-width: 350px;
   background-color: $alpha;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   top: 93px;
+  left: 280px;
   margin: 0 15px;
   transition-property: transform;
   transition-duration: 300ms;

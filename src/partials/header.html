@@ -18,12 +18,14 @@
     <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
       <img src="images/hamburgericon.png" alt="logo firmy" />
     </button>
-    <button class="button button--reversed" type="button" data-modal-open>
-      Buy now
-      <svg width="6" height="10" class="button__chevron">
-        <use href="images/icons.svg#icon-Vector-1"></use>
-      </svg>
-    </button>
+    <div class="header__box-btn">
+      <button class="button button--reversed" type="button" data-modal-open>
+        Buy now
+        <svg width="6" height="10" class="button__chevron">
+          <use href="images/icons.svg#icon-Vector-1"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
 <section class="hero">
@@ -82,8 +84,8 @@
       srcset="images/sotasty@2x.png 2x"
     />
   </div>
+  <div class="backdrop-modal is-hidden" data-modal>
+    <div class="modal"></div>
+    <button class="modal__button" data-modal-close>&times;</button>
+  </div>
 </section>
-<div class="backdrop-modal is-hidden" data-modal>
-  <div class="modal"></div>
-  <button class="modal__button" data-modal-close>&times;</button>
-</div>
