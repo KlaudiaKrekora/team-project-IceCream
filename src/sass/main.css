@@ -55,4 +55,130 @@
 }
 .gallery {
   background-image: linear-gradient(#fff5f6 40%, #fff 40%);
+}
+
+.circle-btn {
+  height: 18px;
+  width: 18px;
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.circle-btn__arrow {
+  stroke: #d41443;
+  stroke-width: 4px;
+}
+.circle-btn:hover {
+  background-color: #ecebeb;
+}
+
+.button {
+  padding: 0.9em 1.7em;
+  font-family: DM Sans;
+  border: none;
+  border-radius: 2em;
+  background-color: #d41443;
+  color: #fff;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #c7133e;
+}
+.button--reversed {
+  background-color: #fff;
+  color: #d41443;
+}
+.button--reversed:hover {
+  background-color: #ecebeb;
+}
+.button--small {
+  font-size: 8px;
+}
+.button--mid {
+  font-size: 14px;
+  font-weight: 700;
+}
+.button--big {
+  font-size: 16px;
+  font-weight: 700;
+}
+.button__chevron {
+  stroke: currentColor;
+  margin-left: 13px;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .button--mid {
+    padding: 0.85em 2.3em;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .button--small {
+    padding: 0.85em 1.6em;
+    font-size: 14px;
+  }
+}
+.footer {
+  background-color: #fff5f6;
+  padding-top: 54px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.footer__title {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  width: 232px;
+  font-family: Titan One;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  font-size: 18px;
+  line-height: 100%;
+}
+.footer__title--bold {
+  color: #d41443;
+  font-size: 34px;
+  letter-spacing: 0.04em;
+  margin-top: 17px;
+  margin-bottom: 43px;
+}
+.footer__contact {
+  display: inline-flex;
+  margin-bottom: 43px;
+  align-self: flex-end;
+  font-size: 12px;
+}
+.footer__contact-title {
+  color: #000;
+}
+.footer__contact-phone {
+  text-decoration: none;
+  color: #d41443;
+}
+.footer__line {
+  position: absolute;
+  left: 0px;
+  bottom: 89px;
+  width: 100%;
+  color: #e1e1e1;
+}
+.footer__copy-rights {
+  width: 160px;
+  font-weight: 700;
+  color: #907e82;
+  align-self: center;
+  padding-bottom: 25px;
+}
+
+.socials {
+  display: inline-flex;
+  gap: 28px;
+  align-self: flex-end;
+  list-style: none;
+  margin-bottom: 46px;
 }/*# sourceMappingURL=main.css.map */
