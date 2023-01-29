@@ -5,46 +5,58 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 6px 20px;
+    padding-top: 6px;
 
     &-btn {
       display: none;
     }
   }
-}
-.menu-toggle {
-  background-color: $complementaryColor;
-  border: none;
-}
-.nav {
-  display: none;
-}
-.hero {
-  background-color: $complementaryColor;
-  position: relative;
 
-  // &__container {
-  //   position: absolute;
-  //   top: 131px;
-  //   left: 20px;
-  //   z-index: 2;
-  // }
+  .menu-toggler {
+    border: none;
 
-  &__bg-image {
-    background-image: url('../images/circlebg.png');
-    background-size: 100%;
-    width: 346px;
-    height: 344px;
-    position: relative;
-    top: 21px;
-    left: 36px;
+    &__icon {
+      display: block;
+      stroke: $brandColor;
+      background-color: $complementaryColor;
+    }
   }
 
-  &__main-image {
+  .nav {
+    display: none;
+  }
+}
+
+.hero {
+  position: relative;
+  height: 450px;
+  background-color: $complementaryColor;
+  overflow: hidden;
+  z-index: -2;
+
+  &-bg {
     position: absolute;
-    top: 31px;
-    left: 117px;
-    z-index: 1;
+    bottom: 75px;
+    right: -62px;
+    width: 346px;
+    height: 344px;
+    background-image: url('../images/circlebg.png');
+    background-size: 100%;
+    z-index: -1;
+
+    &__image {
+      position: absolute;
+      left: 50%;
+      top: 10px;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__heading-box {
+    position: absolute;
+    left: 20px;
+    bottom: 160px;
+    z-index: 0;
   }
 
   &__title {
@@ -65,33 +77,13 @@
     }
   }
 
-  &___circle {
+  &___circle,
+  &__box,
+  &__number,
+  &__number-descripion {
     display: none;
-  }
-
-  &__box {
-    display: none;
-  }
-
-  &__number {
-    display: none;
-
-    &-descripion {
-      display: none;
-    }
   }
 }
-// .button__link {
-//   font-family: $mainFont;
-//   text-decoration: none;
-//   font-size: 8px;
-//   font-weight: 400;
-//   color: $alpha;
-
-//   &--second {
-//     color: $brandColor;
-//   }
-// }
 
 @media screen and (min-width: 768px) {
   .header__box-btn {

@@ -1,22 +1,24 @@
-<header class="header">
-  <div class="header__box">
+<header class="header" id="header">
+  <div class="header__box container">
     <img
-      class="header__box-logo"
+      class="header__logo"
       src="images/logohero.png"
       alt="logo firmy"
       srcset="images/logohero@2x.png 2x"
     />
     <nav>
       <ul class="nav">
-        <li><a class="nav__link" href="#home">Home</a></li>
+        <li><a class="nav__link" href="#header">Home</a></li>
+        <li><a class="nav__link" href="#products">Our products</a></li>
         <li><a class="nav__link" href="#about">About us</a></li>
-        <li><a class="nav__link" href="#how it’s made?">How it’s made?</a></li>
-        <li><a class="nav__link" href="#our products">Our products</a></li>
+        <li><a class="nav__link" href="#advantages">How it's made?</a></li>
         <li><a class="nav__link" href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-      <img src="images/hamburgericon.png" alt="logo firmy" />
+    <button class="menu-toggler js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="menu-toggler__icon" width="20" height="20">
+        <use href="images/icons.svg#icon-Burger"></use>
+      </svg>
     </button>
     <div class="header__box-btn">
       <button class="button button--reversed" type="button" data-modal-open>
@@ -29,31 +31,36 @@
   </div>
 </header>
 <section class="hero">
-  <div class="hero__container container">
-    <h1 class="hero__title">
-      Ice cream<br />
-      made with<br />
-      <span class="hero__title hero__title--boldred">passion</span>
-    </h1>
-    <button class="button button--small" type="button">
-      <a class="button__link" href="#our products">Products</a>
-    </button>
-    <button class="button button--small button--reversed" type="button">
-      <a class="button__link button__link--second" href="#how it’s made?">How it’s made?</a>
-    </button>
-  </div>
-  <div class="hero__bg-image" width="346px" height="344px">
-    <img
-      class="hero__main-image"
-      width="171px"
-      height="410px"
-      src="images/icecreamhero.png"
-      alt="kolorowe lody w wafelku"
-      srcset="images/icecreamhero@2x.png 2x"
-    />
+  <div class="hero__container">
+    <div class="hero__heading-box">
+      <h1 class="hero__title">
+        Ice cream<br />
+        made with<br />
+        <span class="hero__title hero__title--boldred">passion</span>
+      </h1>
+      <button class="button button--small" type="button">
+        <!-- do zmiany # -->
+        <a href="#our products">Products</a>
+      </button>
+      <button class="button button--small button--reversed" type="button">
+        <!-- do zmiany # -->
+        <a href="#how it’s made?">How it’s made?</a>
+      </button>
+    </div>
+
+    <div class="hero-bg">
+      <img
+        class="hero-bg__image"
+        width="171"
+        height="410"
+        src="images/icecreamhero.png"
+        alt="kolorowe lody w wafelku"
+        srcset="images/icecreamhero@2x.png 2x"
+      />
+    </div>
   </div>
 
-  <div class="hero__circle"></div>
+  <!-- <div class="hero__circle"></div>
   <p class="hero__number">16</p>
   <p class="hero__number-descripion">cafes</p>
 
@@ -89,5 +96,5 @@
   <div class="backdrop-modal is-hidden" data-modal>
     <div class="modal"></div>
     <button class="modal__button" data-modal-close>&times;</button>
-  </div>
+  </div> -->
 </section>

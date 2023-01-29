@@ -65,6 +65,11 @@
     max-width: 210px;
     margin-bottom: 19px;
   }
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
   // tworzenie strzałki w buttonie
   // <svg width="6" height="10" class="button__chevron"><use href="images/icons.svg#icon-Vector-1"></use></svg>
   &__chevron {
