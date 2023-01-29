@@ -11,33 +11,25 @@
   transition: background-color 0.3s;
   cursor: pointer;
 
-  &__arrow {
-    stroke: $brandColor;
-    stroke-width: 4px;
-  }
-
-  &:hover {
-    background-color: $hoverColor;
-  }
-
   &--products {
     height: 40px;
     width: 40px;
-    border: none;
-    border-radius: 50%;
     background-color: $alpha;
-    transition: background-color 0.3s;
-    cursor: pointer;
-    &__arrow {
-      stroke: $brandColor;
-      stroke-width: 4px;
+  }
+
+  &__arrow {
+    stroke: $brandColor;
+    stroke-width: 4px;
+
+    &--products {
       display: block;
       text-align: center;
       margin: 0 auto;
     }
-    &:hover {
-      background-color: $hoverColor;
-    }
+  }
+
+  &:hover {
+    background-color: $hoverColor;
   }
 }
 
