@@ -92,16 +92,12 @@
   @extend .button-link;
   color: $brandColor;
 }
-.is-hidden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-}
 
 @media screen and (min-width: 768px) {
   .header__box-btn {
     display: flex;
   }
+
   .hero__box {
     display: flex;
     position: relative;
