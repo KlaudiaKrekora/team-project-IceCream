@@ -11,9 +11,21 @@
   transition: background-color 0.3s;
   cursor: pointer;
 
+  &--products {
+    height: 40px;
+    width: 40px;
+    background-color: $alpha;
+  }
+
   &__arrow {
     stroke: $brandColor;
     stroke-width: 4px;
+
+    &--products {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
   }
 
   &:hover {
