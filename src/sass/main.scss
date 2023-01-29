@@ -5,24 +5,11 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './example';
-@import 'partials/typography';
-@import 'partials/global';
-feature/css-styles
-@import 'partials/gallery';
-@import 'partials/buttons';
-@import 'partials/contacts';
-@import 'partials/ellipsis';
-
-feature/reviews-mobile-styles
-
-
-
-
-@import 'partials/advantages';
-
-
-@import 'partials/reviews';
-
-
- main
-
+@import './partials/typography';
+@import './partials/global';
+@import './partials/gallery';
+@import './partials/buttons';
+@import './partials/contacts';
+@import './partials/ellipsis';
+@import './partials/advantages';
+@import './partials/reviews';
