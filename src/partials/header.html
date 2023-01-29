@@ -1,4 +1,4 @@
-<header class="container header">
+<header class="header">
   <div class="header__box">
     <img
       class="header__box-logo"
@@ -6,8 +6,8 @@
       alt="logo firmy"
       srcset="images/logohero@2x.png 2x"
     />
-    <nav class="nav">
-      <ul>
+    <nav>
+      <ul class="nav">
         <li><a class="nav__link" href="#home">Home</a></li>
         <li><a class="nav__link" href="#about">About us</a></li>
         <li><a class="nav__link" href="#how it’s made?">How it’s made?</a></li>
@@ -18,18 +18,34 @@
     <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
       <img src="images/hamburgericon.png" alt="logo firmy" />
     </button>
-    <button class="button button--big" type="button" data-modal-open>Buy now</button>
+    <div class="header__box-btn">
+      <button class="button button--reversed" type="button" data-modal-open>
+        Buy now
+        <svg width="6" height="10" class="button__chevron">
+          <use href="images/icons.svg#icon-Vector-1"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
 <section class="hero">
-  <h1 class="hero__title">ice cream made with passion</h1>
-  <button class="button button--mid" type="button">
-    <a href="#our products">Products</a>
-  </button>
-  <button class="button button--mid" type="button">
-    <a href="#how it’s made?">How it’s made?</a>
-  </button>
+  <div class="hero__container">
+    <h1 class="hero__title">
+      Ice cream<br />
+      made with<br />
+      <span class="hero__title hero__title--boldred">passion</span>
+    </h1>
+    <button class="button button--mid" type="button">
+      <a class="button-link" href="#our products">Products</a>
+    </button>
+    <button class="button button--mid button--reversed" type="button">
+      <a class="button-link__second" href="#how it’s made?">How it’s made?</a>
+    </button>
+  </div>
+  <div class="hero__bg-image" width="346px" height="344px"></div>
   <img
+    width="171px"
+    height="410px"
     class="hero__main-image"
     src="images/icecreamhero.png"
     alt="kolorowe lody w wafelku"
@@ -38,9 +54,11 @@
   <div class="hero__circle"></div>
   <p class="hero__number">16</p>
   <p class="hero__number-descripion">cafes</p>
+
   <div class="hero__circle"></div>
   <p class="hero__number">230</p>
   <p class="hero__number-descripion">food trucks</p>
+
   <div class="hero__box">
     <img
       class="hero__box-picture"
@@ -48,7 +66,7 @@
       alt="mleko w dzbanku"
       srcset="images/milkhero@2x.png 2x"
     />
-    <div>
+    <div class="hero__box-bottom">
       <p class="hero__box-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et
@@ -66,8 +84,8 @@
       srcset="images/sotasty@2x.png 2x"
     />
   </div>
+  <div class="backdrop-modal is-hidden" data-modal>
+    <div class="modal"></div>
+    <button class="modal__button" data-modal-close>&times;</button>
+  </div>
 </section>
-<div class="backdrop-modal is-hidden" data-modal>
-  <div class="modal"></div>
-  <button class="modal__button" data-modal-close>&times;</button>
-</div>

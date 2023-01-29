@@ -72,6 +72,11 @@
     font-weight: $bold;
   }
 
+  &--menu {
+    width: 100%;
+    max-width: 210px;
+    margin-bottom: 19px;
+  }
   // tworzenie strzałki w buttonie
   // <svg width="6" height="10" class="button__chevron"><use href="images/icons.svg#icon-Vector-1"></use></svg>
   &__chevron {
@@ -83,9 +88,15 @@
 }
 
 @media screen and (min-width: 768px) {
-  .button--mid {
-    padding: 0.85em 2.3em;
-    font-size: 16px;
+  .button {
+    &--mid {
+      padding: 0.85em 2.3em;
+      font-size: 16px;
+    }
+
+    &--menu {
+      max-width: 186px;
+    }
   }
 }
 
@@ -94,4 +105,10 @@
     padding: 0.85em 1.6em;
     font-size: 14px;
   }
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
