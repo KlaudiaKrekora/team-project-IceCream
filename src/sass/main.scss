@@ -5,15 +5,34 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './example';
+ feature/footer-styles
+
+
+@import './partials/footer';
+
 @import 'partials/typography';
 @import 'partials/global';
-
+feature/css-styles
 @import 'partials/gallery';
-
 @import 'partials/buttons';
-
+@import 'partials/contacts';
 @import 'partials/ellipsis';
+
 
 @import 'partials/header';
 
 @import 'partials/modal';
+
+
+
+
+@import 'partials/advantages';
+
+
+@import 'partials/reviews';
+
+
+ main
+
+
+
