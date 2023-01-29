@@ -1,0 +1,154 @@
+.header {
+  background-color: $complementaryColor;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 20px;
+
+    &-btn {
+      display: none;
+    }
+  }
+}
+.menu-toggle {
+  background-color: $complementaryColor;
+  border: none;
+}
+.nav {
+  display: none;
+}
+.hero {
+  background-color: $complementaryColor;
+  position: relative;
+
+  &__bg-image {
+    background-image: url('../images/circlebg.png');
+    background-size: 100%;
+    width: 346px;
+    height: 344px;
+    position: relative;
+    top: 21px;
+    left: 36px;
+  }
+
+  &__main-image {
+    position: absolute;
+    top: 31px;
+    left: 117px;
+    z-index: 1;
+  }
+
+  &__container {
+    position: absolute;
+    top: 131px;
+    left: 20px;
+    z-index: 2;
+  }
+
+  &__title {
+    font-family: $accentFont;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0.04em;
+    color: $alpha;
+    text-transform: uppercase;
+    line-height: 1.86rem;
+    background-color: transparent;
+    margin-bottom: 20px;
+
+    &--boldred {
+      font-size: 48px;
+      color: $brandColor;
+      line-height: 2.87rem;
+    }
+  }
+
+  &___circle {
+    display: none;
+  }
+
+  &__box {
+    display: none;
+  }
+
+  &__number {
+    display: none;
+
+    &-descripion {
+      display: none;
+    }
+  }
+}
+.button-link {
+  font-family: $mainFont;
+  text-decoration: none;
+  font-size: 8px;
+  font-weight: 400;
+  color: $alpha;
+}
+.button-link__second {
+  @extend .button-link;
+  color: $brandColor;
+}
+
+@media screen and (min-width: 768px) {
+  .header__box-btn {
+    display: flex;
+  }
+
+  .hero__box {
+    display: flex;
+    position: relative;
+
+    &-picture {
+      position: absolute;
+      bottom: 28px;
+      left: 34px;
+    }
+
+    &-person {
+      position: absolute;
+      bottom: 0;
+      right: 34px;
+    }
+
+    &-bottom {
+      max-width: 114px;
+      position: absolute;
+      bottom: 59px;
+      left: 154px;
+    }
+
+    &-text {
+      font-family: $mainFont;
+      color: $alpha;
+      font-size: 8px;
+      line-height: 0.75rem;
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu-toggle {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    gap: 35px;
+    list-style-type: none;
+
+    &__link {
+      text-decoration: none;
+      color: $alpha;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.3rem;
+
+      &:focus,
+      &:hover {
+        color: $brandColor;
+      }
+    }
+  }
+}
