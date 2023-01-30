@@ -24,10 +24,6 @@
       }
     }
   }
-
-  .nav {
-    display: none;
-  }
 }
 
 .menu-toggle {
@@ -225,7 +221,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .menu-toggle {
+  .menu-toggler {
     display: none;
   }
   .nav {
@@ -245,5 +241,68 @@
         color: $brandColor;
       }
     }
+  }
+  .hero {
+    height: 665px;
+
+    &-bg {
+      bottom: 75px;
+      right: 267px;
+      width: 538px;
+      height: 538px;
+      background-image: url('../images/circlebg.png');
+
+      &__image {
+        top: 56px;
+        width: 236px;
+        height: 557px;
+      }
+    }
+
+    &__heading-box {
+      left: 115px;
+      bottom: 292px;
+      line-height: 2.72rem;
+    }
+
+    &__title {
+      font-size: 38px;
+
+      &--boldred {
+        font-size: 58px;
+        line-height: 3.28rem;
+      }
+    }
+  }
+
+  .hero-person {
+    bottom: 0;
+    right: 68px;
+  }
+  .hero-milk {
+    left: 77px;
+    bottom: 45px;
+    gap: 30px;
+
+    &__img {
+      width: 188px;
+      height: 191px;
+    }
+
+    &__text {
+      width: 200px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.23;
+    }
+
+    &__btn {
+      width: 26px;
+      height: 26px;
+    }
+  }
+  .hero-numbers {
+    right: 115px;
+    top: 160px;
   }
 }
