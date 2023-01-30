@@ -1,0 +1,110 @@
+<header class="header" id="header">
+  <div class="header__box container">
+    <img
+      class="header__logo"
+      src="images/logohero.png"
+      alt="logo firmy"
+      srcset="images/logohero@2x.png 2x"
+    />
+    <nav>
+      <ul class="nav">
+        <li><a class="nav__link" href="#header">Home</a></li>
+        <li><a class="nav__link" href="#products">Our products</a></li>
+        <li><a class="nav__link" href="#about">About us</a></li>
+        <li><a class="nav__link" href="#advantages">How it's made?</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-buttons">
+      <button class="menu-toggler js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-toggler__icon" width="20" height="20">
+          <use href="images/icons.svg#icon-Burger"></use>
+        </svg>
+      </button>
+      <button
+        class="header-buttons__cta button button--big button--reversed"
+        type="button"
+        data-modal-open
+      >
+        Buy now
+        <svg width="6" height="10" class="button__chevron">
+          <use href="images/icons.svg#icon-Vector-1"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero__container container">
+    <div class="hero__heading-box">
+      <h1 class="hero__title">
+        Ice cream<br />
+        made with<br />
+        <span class="hero__title hero__title--boldred">passion</span>
+      </h1>
+      <button class="button button--small" type="button">
+        <a href="#products">Products</a>
+      </button>
+      <button class="button button--small button--reversed" type="button">
+        <a href="#advantages">How it’s made?</a>
+      </button>
+    </div>
+
+    <div class="hero-bg">
+      <img
+        class="hero-bg__image"
+        width="171"
+        height="410"
+        src="images/icecreamhero.png"
+        alt="kolorowe lody w wafelku"
+        srcset="images/icecreamhero@2x.png 2x"
+      />
+    </div>
+
+    <div class="hero-numbers">
+      <div class="hero-number">
+        <div class="hero-number__circle"></div>
+        <p class="hero-number__number">16</p>
+        <p class="hero-number__text">cafes</p>
+      </div>
+      <div class="hero-number">
+        <div class="hero-number__circle"></div>
+        <p class="hero-number__number">23</p>
+        <p class="hero-number__text">food trucks</p>
+      </div>
+    </div>
+
+    <div class="hero-milk">
+      <img
+        class="hero-milk__img"
+        src="images/milkhero.png"
+        alt="mleko w dzbanku"
+        srcset="images/milkhero@2x.png 2x"
+      />
+      <div class="hero-milk__wrapper">
+        <p class="hero-milk__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button class="hero-milk__btn circle-btn">
+          <svg width="5" height="18" class="circle-btn__arrow hero-milk__svg">
+            <use href="images/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <img
+      class="hero-person"
+      src="images/sotasty.png"
+      alt="kobieta jedzaca lody"
+      srcset="images/sotasty@2x.png 2x"
+    />
+  </div>
+
+  <div class="backdrop-modal is-hidden" data-modal>
+    <div class="modal"></div>
+    <button class="modal__button" data-modal-close>&times;</button>
+  </div>
+</section>

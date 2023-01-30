@@ -1,0 +1,345 @@
+.header {
+  background-color: $complementaryColor;
+  z-index: 3;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6px;
+  }
+
+  &-buttons {
+    &__cta {
+      display: none;
+    }
+
+    .menu-toggler {
+      border: none;
+      background-color: transparent;
+
+      &__icon {
+        display: block;
+        stroke: $brandColor;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.menu-toggle {
+  border: none;
+}
+.nav {
+  display: none;
+}
+
+.hero {
+  position: relative;
+  height: 450px;
+  background-color: $complementaryColor;
+  overflow: hidden;
+  z-index: 0;
+
+  &__container {
+    position: relative;
+    height: 100%;
+  }
+
+  &-bg {
+    position: absolute;
+    bottom: 75px;
+    right: -62px;
+    width: 346px;
+    height: 344px;
+    background-image: url('../images/circlebg.png');
+    background-size: 100%;
+    z-index: 1;
+
+    &__image {
+      position: absolute;
+      left: 50%;
+      top: 10px;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__heading-box {
+    position: absolute;
+    left: 20px;
+    bottom: 160px;
+    z-index: 2;
+  }
+
+  &__title {
+    font-family: $accentFont;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0.04em;
+    color: $alpha;
+    text-transform: uppercase;
+    background-color: transparent;
+    margin-bottom: 20px;
+
+    &--boldred {
+      font-size: 48px;
+      color: $brandColor;
+      line-height: 0.955;
+    }
+  }
+
+  &-numbers,
+  &-milk,
+  &-person {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    position: relative;
+
+    &__box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 37px 34px;
+    }
+
+    &-buttons {
+      display: flex;
+      align-items: center;
+
+      &__cta {
+        display: block;
+      }
+
+      .menu-toggler {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .hero {
+    height: 400px;
+
+    &-bg {
+      bottom: 46px;
+      right: 137px;
+      width: 324px;
+      height: 322px;
+      background-image: url('../images/circlebg.png');
+      background-size: 100%;
+      z-index: -1;
+
+      &__image {
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__heading-box {
+      left: 34px;
+      bottom: 173px;
+    }
+
+    &__title {
+      font-size: 22px;
+
+      &--boldred {
+        font-size: 34px;
+        line-height: 0.905;
+      }
+    }
+  }
+
+  .hero-numbers {
+    display: block;
+    position: absolute;
+    right: 44px;
+    top: 96px;
+  }
+
+  .hero-number {
+    position: relative;
+    margin-bottom: 15px;
+    text-align: right;
+
+    &__circle {
+      position: absolute;
+      right: -8px;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      background-color: $alpha;
+      z-index: -1;
+    }
+
+    &__number {
+      font-size: 28px;
+      font-family: $accentFont;
+      letter-spacing: 0.04em;
+      color: $brandColor;
+    }
+
+    &__text {
+      font-size: 8px;
+      color: $alpha;
+    }
+  }
+
+  .hero-milk {
+    position: absolute;
+    left: 34px;
+    bottom: 28px;
+    display: flex;
+    align-items: flex-end;
+
+    &__wrapper {
+      padding-bottom: 5px;
+    }
+
+    &__text {
+      width: 114px;
+      margin-bottom: 7px;
+      font-size: 8px;
+      line-height: 1.5;
+      color: $alpha;
+    }
+
+    &__btn {
+      display: block;
+    }
+
+    &__img {
+      width: 124px;
+      height: 126px;
+    }
+  }
+
+  .hero-person {
+    display: block;
+    position: absolute;
+    width: 168px;
+    height: 133px;
+    bottom: 0;
+    right: 34px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .menu-toggler {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    gap: 35px;
+    list-style-type: none;
+
+    &__link {
+      text-decoration: none;
+      color: $alpha;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.3rem;
+
+      &:focus,
+      &:hover {
+        color: $brandColor;
+      }
+    }
+  }
+  .header__box {
+    margin: 0 auto;
+    padding-left: 46px;
+    padding-right: 115px;
+  }
+
+  .hero {
+    height: 665px;
+
+    &-bg {
+      bottom: 75px;
+      right: 267px;
+      width: 538px;
+      height: 538px;
+      background-image: url('../images/circlebg.png');
+
+      &__image {
+        top: 56px;
+        width: 236px;
+        height: 557px;
+      }
+    }
+
+    &__heading-box {
+      left: 115px;
+      bottom: 292px;
+      line-height: 2.72rem;
+    }
+
+    &__title {
+      font-size: 38px;
+
+      &--boldred {
+        font-size: 58px;
+        line-height: 3.28rem;
+      }
+    }
+  }
+
+  .hero-person {
+    width: 293px;
+    height: 232px;
+    bottom: 0;
+    right: 109px;
+  }
+  .hero-milk {
+    left: 77px;
+    bottom: 45px;
+    gap: 30px;
+
+    &__img {
+      width: 188px;
+      height: 191px;
+    }
+
+    &__text {
+      width: 200px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.23;
+    }
+
+    &__btn {
+      width: 26px;
+      height: 26px;
+    }
+
+    &__svg {
+      width: 7px;
+      height: 9px;
+    }
+  }
+  .hero-numbers {
+    right: 115px;
+    top: 160px;
+  }
+  .hero-number {
+    &__circle {
+      height: 30px;
+      width: 30px;
+    }
+
+    &__number {
+      font-size: 46px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+}

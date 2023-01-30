@@ -4,8 +4,32 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-// @import './example';
+
+// TYPOGRAPHY
 @import 'partials/typography';
+// GLOBAL
 @import 'partials/global';
 @import 'partials/about';
 @import 'partials/button';
+// BUTTONS
+@import 'partials/buttons';
+// ELLIPSIS
+@import 'partials/ellipsis';
+// HEADER
+@import 'partials/header';
+// MENU
+@import 'partials/menu';
+// PRODUCTS
+@import 'partials/products';
+// ADVANTAGES
+@import 'partials/advantages';
+// GALLERY
+@import 'partials/gallery';
+// REVIEWS
+@import 'partials/reviews';
+// CONTACTS
+@import 'partials/contacts';
+// FOOTER
+@import './partials/footer';
+//MODAL
+@import 'partials/modal';
