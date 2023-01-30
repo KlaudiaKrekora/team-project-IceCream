@@ -2,7 +2,7 @@
   background-color: $complementaryColor;
   z-index: 3;
 
-  &__box {
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,7 +99,7 @@
   .header {
     position: relative;
 
-    &__box {
+    &__container {
       position: absolute;
       top: 0;
       left: 0;
@@ -252,8 +252,7 @@
       }
     }
   }
-  .header__box {
-    margin: 0 auto;
+  .header__container {
     padding-left: 46px;
     padding-right: 115px;
   }
