@@ -1,5 +1,4 @@
-
-
+// About
 .section-about {
     padding-top: 125px;
     background-color: $fadedBgColor;
@@ -28,17 +27,19 @@
     margin-bottom: 26px;
  }
 } 
+
 .about {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 46px;
 
 &__image {
   max-width: 280px;
 }
 
 &__description {
-    padding: 47px 35px;
+    padding:  0 35px 47px;
     font-family: $mainFont;
     font-weight: $regular;
     font-size: 12px;
