@@ -3,9 +3,9 @@
 .section-about {
     padding-top: 125px;
     background-color: $fadedBgColor;
-}
 
-.section-about__label {
+
+&__label {
     color: $secondaryBrandColor;
     font-family: $accentFont;
     font-weight: $thick;
@@ -16,7 +16,7 @@
     margin-bottom: 15px;
 }
 
-.section-about__heading {
+&__heading {
     color: $brandColor;
     font-family: $accentFont;
     font-weight: $thick;
@@ -26,18 +26,18 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     margin-bottom: 26px;
-}
-
+ }
+} 
 .about {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.about__image {
+
+&__image {
   max-width: 280px;
 }
 
-.about__description {
+&__description {
     padding: 47px 35px;
     font-family: $mainFont;
     font-weight: $regular;
@@ -45,10 +45,11 @@
     line-height: 1.58; 
 }
 
-.about__image-background {
+&__image-background {
     max-width: 320px;
     width: 100%;
     color: $fillerColor;
     z-index: 1;
     background-image: url(/src/images/aboutbg320.png);
+ }
 }
