@@ -6,19 +6,22 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 6px;
-
-    &-btn {
-      display: none;
-    }
   }
 
-  .menu-toggler {
-    border: none;
+  &-buttons {
+    &__cta {
+      display: none;
+    }
 
-    &__icon {
-      display: block;
-      stroke: $brandColor;
-      background-color: $complementaryColor;
+    .menu-toggler {
+      border: none;
+      background-color: transparent;
+
+      &__icon {
+        display: block;
+        stroke: $brandColor;
+        background-color: transparent;
+      }
     }
   }
 
@@ -71,61 +74,148 @@
     letter-spacing: 0.04em;
     color: $alpha;
     text-transform: uppercase;
-    line-height: 1.86rem;
     background-color: transparent;
     margin-bottom: 20px;
 
     &--boldred {
       font-size: 48px;
       color: $brandColor;
-      line-height: 2.87rem;
+      line-height: 0.955;
     }
   }
 
-  &___circle,
-  &__box,
-  &__number,
-  &__number-descripion {
+  &-numbers,
+  &-milk {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .header__box-btn {
-    display: flex;
-  }
-
-  .hero__box {
-    display: flex;
+  .header {
     position: relative;
 
-    &-picture {
+    &__box {
       position: absolute;
-      bottom: 28px;
-      left: 34px;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 37px 34px;
     }
 
-    &-person {
-      position: absolute;
-      bottom: 0;
-      right: 34px;
-    }
+    &-buttons {
+      display: flex;
+      align-items: center;
 
-    &-bottom {
-      max-width: 114px;
-      position: absolute;
-      bottom: 59px;
-      left: 154px;
-    }
+      &__cta {
+        display: block;
+      }
 
-    &-text {
-      font-family: $mainFont;
-      color: $alpha;
-      font-size: 8px;
-      line-height: 0.75rem;
+      .menu-toggler {
+        margin-right: 30px;
+      }
     }
   }
+
+  .hero {
+    height: 400px;
+
+    &-bg {
+      bottom: 46px;
+      right: 137px;
+      width: 324px;
+      height: 322px;
+      background-image: url('../images/circlebg.png');
+      background-size: 100%;
+      z-index: -1;
+
+      &__image {
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__heading-box {
+      left: 34px;
+      bottom: 173px;
+    }
+
+    &__title {
+      font-size: 22px;
+
+      &--boldred {
+        font-size: 34px;
+        line-height: 0.905;
+      }
+    }
+  }
+
+  .hero-numbers {
+    display: block;
+    position: absolute;
+    right: 44px;
+    top: 96px;
+  }
+
+  .hero-number {
+    text-align: right;
+    position: relative;
+
+    &__circle {
+      position: absolute;
+      right: -8px;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      background-color: $alpha;
+      z-index: -1;
+    }
+
+    &__number {
+      font-size: 28px;
+      font-family: $accentFont;
+      letter-spacing: 0.04em;
+      color: $brandColor;
+    }
+
+    &__text {
+      font-size: 8px;
+      color: $alpha;
+    }
+  }
+
+  .hero-milk {
+    position: absolute;
+    left: 34px;
+    bottom: 28px;
+    display: flex;
+    align-items: flex-end;
+
+    &__wrapper {
+      padding-bottom: 5px;
+    }
+
+    &__text {
+      width: 114px;
+      margin-bottom: 7px;
+      font-size: 8px;
+      line-height: 1.5;
+      color: $alpha;
+    }
+
+    &__btn {
+      display: block;
+    }
+  }
+
+  .hero-person {
+    position: absolute;
+    bottom: 0;
+    right: 34px;
+  }
 }
+
 @media screen and (min-width: 1280px) {
   .menu-toggle {
     display: none;
