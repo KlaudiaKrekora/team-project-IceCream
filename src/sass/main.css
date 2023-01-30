@@ -926,11 +926,11 @@
     width: unset;
     padding-bottom: 18px;
   }
-  .socialsitem {
+  .socials__item {
     width: 34px;
     height: 34px;
   }
-  .socialsitem:focus, .socialsitem:hover {
+  .socials__item:focus, .socials__item:hover {
     background-color: #d41443;
   }
 }
@@ -954,6 +954,9 @@
   }
   .footer__copy-rights {
     padding-bottom: 10px;
+  }
+  .socials__item:focus, .socials__item:hover {
+    background-color: #d41443;
   }
 }
 .backdrop-modal {

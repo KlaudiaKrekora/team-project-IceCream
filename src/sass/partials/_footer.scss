@@ -123,7 +123,7 @@
     }
   }
   .socials {
-    &item {
+    &__item {
       width: 34px;
       height: 34px;
       &:focus,
@@ -156,6 +156,14 @@
     }
     &__copy-rights {
       padding-bottom: 10px;
+    }
+  }
+  .socials {
+    &__item {
+      &:focus,
+      &:hover {
+        background-color: $brandColor;
+      }
     }
   }
 }
