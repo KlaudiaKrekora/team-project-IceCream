@@ -211,10 +211,18 @@
     &__btn {
       display: block;
     }
+
+    &__img {
+      width: 124px;
+      height: 126px;
+    }
   }
 
   .hero-person {
+    display: block;
     position: absolute;
+    width: 168px;
+    height: 133px;
     bottom: 0;
     right: 34px;
   }
@@ -241,6 +249,11 @@
         color: $brandColor;
       }
     }
+  }
+  .header__box {
+    margin: 0;
+    padding-left: 46px;
+    padding-right: 115px;
   }
   .hero {
     height: 665px;
@@ -276,8 +289,10 @@
   }
 
   .hero-person {
+    width: 293px;
+    height: 232px;
     bottom: 0;
-    right: 68px;
+    right: 109px;
   }
   .hero-milk {
     left: 77px;
@@ -300,9 +315,30 @@
       width: 26px;
       height: 26px;
     }
+
+    &__svg {
+      width: 7px;
+      height: 9px;
+    }
   }
   .hero-numbers {
     right: 115px;
     top: 160px;
+  }
+  .hero-number {
+    margin-bottom: 15px;
+
+    &__circle {
+      height: 30px;
+      width: 30px;
+    }
+
+    &__number {
+      font-size: 46px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
   }
 }
