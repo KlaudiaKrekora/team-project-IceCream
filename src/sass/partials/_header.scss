@@ -34,6 +34,11 @@
   overflow: hidden;
   z-index: -2;
 
+  &__container {
+    position: relative;
+    height: 100%;
+  }
+
   &-bg {
     position: absolute;
     bottom: 75px;
