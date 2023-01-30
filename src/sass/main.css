@@ -955,9 +955,6 @@
   .footer__copy-rights {
     padding-bottom: 10px;
   }
-  .socials__item:focus, .socials__item:hover {
-    background-color: #d41443;
-  }
 }
 .backdrop-modal {
   position: fixed;

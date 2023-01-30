@@ -158,12 +158,4 @@
       padding-bottom: 10px;
     }
   }
-  .socials {
-    &__item {
-      &:focus,
-      &:hover {
-        background-color: $brandColor;
-      }
-    }
-  }
 }
