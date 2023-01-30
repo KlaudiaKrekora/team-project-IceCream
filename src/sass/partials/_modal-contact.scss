@@ -1,0 +1,62 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition-property: visibility, opacity;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+  z-index: 1;
+}
+
+.hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-contact {
+  width: 100%;
+  height: 100%;
+  max-width: 650px;
+  max-height: 600px;
+  background: $alpha;
+  box-shadow: 8px 8px 9px -12px rgba(66, 68, 90, 1);
+  border-radius: 22px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  visibility: visible;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+
+  &__close {
+    color: $beta;
+    background-color: $alpha;
+    border: 1px solid $lineColor;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+
+    &:hover,
+    &:focus {
+      color: $brandColor;
+      border: 1px solid $fillerColor;
+    }
+  }
+
+  &__header {
+    color: $brandColor;
+    font-size: 32px;
+    line-height: 1.8;
+    font-weight: $bold;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+}
