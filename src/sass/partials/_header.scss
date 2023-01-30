@@ -1,5 +1,6 @@
 .header {
   background-color: $complementaryColor;
+  z-index: 3;
 
   &__box {
     display: flex;
@@ -38,7 +39,7 @@
   height: 450px;
   background-color: $complementaryColor;
   overflow: hidden;
-  z-index: -2;
+  z-index: 0;
 
   &__container {
     position: relative;
@@ -53,7 +54,7 @@
     height: 344px;
     background-image: url('../images/circlebg.png');
     background-size: 100%;
-    z-index: -1;
+    z-index: 1;
 
     &__image {
       position: absolute;
@@ -67,7 +68,7 @@
     position: absolute;
     left: 20px;
     bottom: 160px;
-    z-index: 0;
+    z-index: 2;
   }
 
   &__title {
@@ -163,8 +164,9 @@
   }
 
   .hero-number {
-    text-align: right;
     position: relative;
+    margin-bottom: 15px;
+    text-align: right;
 
     &__circle {
       position: absolute;
@@ -251,10 +253,11 @@
     }
   }
   .header__box {
-    margin: 0;
+    margin: 0 auto;
     padding-left: 46px;
     padding-right: 115px;
   }
+
   .hero {
     height: 665px;
 
@@ -326,8 +329,6 @@
     top: 160px;
   }
   .hero-number {
-    margin-bottom: 15px;
-
     &__circle {
       height: 30px;
       width: 30px;
