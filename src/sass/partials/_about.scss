@@ -47,10 +47,16 @@
 }
 
 &__image-background {
-    max-width: 320px;
-    width: 100%;
+    background-repeat: no-repeat;
     color: $fillerColor;
-    z-index: 1;
     background-image: url(/src/images/aboutbg320.png);
  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .about__image-background {
+    background-image: url(/src/images/aboutbg320@2x.png);
+  }
 }
