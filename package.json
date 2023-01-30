@@ -23,6 +23,6 @@
     "posthtml-include": "^1.7.4"
   },
   "dependencies": {
-    "swiper": "^8.4.6"
+    "swiper": "^8.4.7"
   }
 }
