@@ -1,0 +1,62 @@
+// About
+.section-about {
+    padding-top: 125px;
+    background-color: $fadedBgColor;
+
+
+&__label {
+    color: $secondaryBrandColor;
+    font-family: $accentFont;
+    font-weight: $thick;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+&__heading {
+    color: $brandColor;
+    font-family: $accentFont;
+    font-weight: $thick;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+ }
+} 
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 46px;
+
+&__image {
+  max-width: 280px;
+}
+
+&__description {
+    padding:  0 35px 47px;
+    font-family: $mainFont;
+    font-weight: $regular;
+    font-size: 12px;
+    line-height: 1.58; 
+}
+
+&__image-background {
+    background-repeat: no-repeat;
+    color: $fillerColor;
+    background-image: url(/src/images/aboutbg320.png);
+ }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .about__image-background {
+    background-image: url(/src/images/aboutbg320@2x.png);
+  }
+}

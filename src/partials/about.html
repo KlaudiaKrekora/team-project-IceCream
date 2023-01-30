@@ -1,35 +1,44 @@
-<section class="section-about">
-  <label class="section-about__label">Tradition and love</label>
+<section id="about" class="container section-about">
+  <h3 class="section-about__label">Tradition and love</h3>
   <h2 class="section-about__heading">How it's made?</h2>
   <div class="about">
     <img
       class="about__image"
-      src="/src/images/about1.png"
-      srcset="/src/images/about1.png 1x, /src/images/about1@2x.png 2x"
+      src="/src/images/about280.png"
+      srcset="/src/images/about280.png     280w, 
+              /src/images/about280@2x.png  560w,
+              /src/images/about340.png     340w, 
+              /src/images/about340@2x.png  680w,
+              /src/images/about516.png     516w, 
+              /src/images/about516@2x.png 1032w"
+      sizes="(min-width: 1200px) 516px, (min-width: 768px) 340px, 100vw "
       alt="grafika przedstawia dzbanek mleka oraz głowe krowy w tle"
-      sizes="280vw"
     />
     <p class="about__description">
       Fusce ut velit laoreet, tempus arcu eu, molestie tortor. 
       Nam vel justo cursus, faucibus lorem
       eget, egestas eros. Maecenas eleifend erat at justo fringilla.
     </p>
-  </div>
+  </div>›
   <div class="about">
-    <p class="about__description">
+    <p class="about__description about__image-background">
       Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
       imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
       Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
     </p>
-    <img
+    <!-- <img
       class="about__image-background"
-      src="/src/images/aboutbg.png"
-      srcset="/src/images/aboutbg.png 1x, /src/images/aboutbg@2x.png 2x"
+      src="/src/images/aboutbg320.png"
+      srcset="/src/images/aboutbg320.png 1x, /src/images/aboutbg320@2x.png 2x"
       alt="grafika przedstawia porcje wylanego mleka"
-      sizes="320vw"
-    />
+    /> -->
   </div>
   <div class="about">
-    <button type="button">Read more</button>
+    <button type="button" class="button button--reversed button--mid">
+      Read more
+      <svg width="6" height="10" class="button__chevron">
+        <use href="images/icons.svg#icon-Vector-1"></use>
+      </svg>
+    </button>
   </div>
 </section>
