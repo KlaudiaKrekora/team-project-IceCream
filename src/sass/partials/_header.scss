@@ -1,5 +1,6 @@
 .header {
   background-color: $complementaryColor;
+  z-index: 3;
 
   &__box {
     display: flex;
@@ -24,10 +25,6 @@
       }
     }
   }
-
-  .nav {
-    display: none;
-  }
 }
 
 .menu-toggle {
@@ -42,7 +39,7 @@
   height: 450px;
   background-color: $complementaryColor;
   overflow: hidden;
-  z-index: -2;
+  z-index: 0;
 
   &__container {
     position: relative;
@@ -57,7 +54,7 @@
     height: 344px;
     background-image: url('../images/circlebg.png');
     background-size: 100%;
-    z-index: -1;
+    z-index: 1;
 
     &__image {
       position: absolute;
@@ -71,7 +68,7 @@
     position: absolute;
     left: 20px;
     bottom: 160px;
-    z-index: 0;
+    z-index: 2;
   }
 
   &__title {
@@ -167,8 +164,9 @@
   }
 
   .hero-number {
-    text-align: right;
     position: relative;
+    margin-bottom: 15px;
+    text-align: right;
 
     &__circle {
       position: absolute;
@@ -215,17 +213,25 @@
     &__btn {
       display: block;
     }
+
+    &__img {
+      width: 124px;
+      height: 126px;
+    }
   }
 
   .hero-person {
+    display: block;
     position: absolute;
+    width: 168px;
+    height: 133px;
     bottom: 0;
     right: 34px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .menu-toggle {
+  .menu-toggler {
     display: none;
   }
   .nav {
@@ -244,6 +250,96 @@
       &:hover {
         color: $brandColor;
       }
+    }
+  }
+  .header__box {
+    margin: 0 auto;
+    padding-left: 46px;
+    padding-right: 115px;
+  }
+
+  .hero {
+    height: 665px;
+
+    &-bg {
+      bottom: 75px;
+      right: 267px;
+      width: 538px;
+      height: 538px;
+      background-image: url('../images/circlebg.png');
+
+      &__image {
+        top: 56px;
+        width: 236px;
+        height: 557px;
+      }
+    }
+
+    &__heading-box {
+      left: 115px;
+      bottom: 292px;
+      line-height: 2.72rem;
+    }
+
+    &__title {
+      font-size: 38px;
+
+      &--boldred {
+        font-size: 58px;
+        line-height: 3.28rem;
+      }
+    }
+  }
+
+  .hero-person {
+    width: 293px;
+    height: 232px;
+    bottom: 0;
+    right: 109px;
+  }
+  .hero-milk {
+    left: 77px;
+    bottom: 45px;
+    gap: 30px;
+
+    &__img {
+      width: 188px;
+      height: 191px;
+    }
+
+    &__text {
+      width: 200px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.23;
+    }
+
+    &__btn {
+      width: 26px;
+      height: 26px;
+    }
+
+    &__svg {
+      width: 7px;
+      height: 9px;
+    }
+  }
+  .hero-numbers {
+    right: 115px;
+    top: 160px;
+  }
+  .hero-number {
+    &__circle {
+      height: 30px;
+      width: 30px;
+    }
+
+    &__number {
+      font-size: 46px;
+    }
+
+    &__text {
+      font-size: 14px;
     }
   }
 }
