@@ -2,6 +2,7 @@
 
 .section-about {
     padding-top: 125px;
+    background-color: $fadedBgColor;
 }
 
 .section-about__label {
@@ -38,8 +39,14 @@
 
 .about__description {
     padding: 46px 35px 0;
+    font-family: $mainFont;
+    font-weight: $regular;
+    font-size: 12px;
+    line-height: 1.58; 
 }
 
 .about__image-background {
     max-width: 480px;
+    z-index: 1;
+    background-image: url(/src/images/aboutbg@2x.png);
 }
