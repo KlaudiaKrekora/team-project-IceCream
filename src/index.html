@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nagłówek strony</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
+    <title>IceCream - lick your life to the fullest</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
     <!-- HEADER -->
     <include src="./partials/header.html"></include>
     <!-- PRODUCTS-->
     <include src="./partials/products.html"></include>
-
     <!-- ADVANTAGES-->
     <include src="./partials/advantages.html"></include>
     <!-- GALLERY -->
     <include src="./partials/gallery.html"></include>
-    <!-- CONTACTS-->
-    <include src="./partials/contacts.html"></include>
-    <!-- MOBILE / TABLET MENU -->
-    <include src="./partials/menu.html"></include>
-    <!-- REVIEWS -->
+       <!-- REVIEWS -->
     <include src="./partials/reviews.html"></include>
     <!-- CONTACTS -->
     <include src="./partials/contacts.html"></include>
+    <!-- FOOTER-->
     <include src="./partials/footer.html"></include>
-
+     <!-- MOBILE / TABLET MENU -->
+    <include src="./partials/menu.html"></include>
 
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <script src="./index.js" type="module"></script>
     <script src="js/modal.js"></script>
     <script src="js/mobile-menu.js"></script>
-</body>
-
+  </body>
 </html>
