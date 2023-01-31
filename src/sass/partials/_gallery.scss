@@ -1,6 +1,10 @@
 .gallery {
   background-image: linear-gradient($fadedBgColor 40%, $alpha 40%);
 
+  &__container {
+    padding: 0;
+  }
+
   &__image {
     width: 100%;
     height: auto;
