@@ -1,10 +1,17 @@
 // About
-.section-about {
-    padding-top: 125px;
-    background-color: $fadedBgColor;
+.about {
+  padding-top: 125px;
+  background-color: $fadedBgColor;
+  background-image: url(/src/images/aboutbg320.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom 60px right 0;
 
+  &__title {
+    width: 200px;
+  }
 
-&__label {
+  &__label {
     color: $secondaryBrandColor;
     font-family: $accentFont;
     font-weight: $thick;
@@ -13,9 +20,9 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 15px;
-}
+  }
 
-&__heading {
+  &__heading {
     color: $brandColor;
     font-family: $accentFont;
     font-weight: $thick;
@@ -25,38 +32,73 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     margin-bottom: 26px;
- }
-} 
-
-.about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 46px;
-
-&__image {
-  max-width: 280px;
+  }
 }
 
-&__description {
-    padding:  0 35px 47px;
+.about-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 46px;
+
+  &__image {
+    max-width: 280px;
+  }
+
+  &__description {
+    padding: 0 35px 50px 35px;
     font-family: $mainFont;
     font-weight: $regular;
     font-size: 12px;
-    line-height: 1.58; 
+    line-height: 1.58;
+
+    &--grey {
+      color: $fillerColor;
+      padding-bottom: 17px;
+    }
+  }
 }
 
-&__image-background {
-    background-repeat: no-repeat;
-    color: $fillerColor;
-    background-image: url(/src/images/aboutbg320.png);
- }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .about__image-background {
+      background-image: url(/src/images/aboutbg320@2x.png);
+    }
+  }
+ 
+
+@media screen and (min-width: 768px) {
+  .about {
+    background-image: none;
+  }
+  .about-box {
+    flex-direction: row;
+
+    &__image {
+      max-width: 340px;
+    }
+    &__description {
+      font-size: 14px;
+    }
+  }
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .about__image-background {
-    background-image: url(/src/images/aboutbg320@2x.png);
+@media screen and (min-width: 1200px) {
+  .about {
+    background-image: url(/src/images/aboutbg1282.png);
+  }
+  .about-box {
+    flex-direction: row;
+
+    &__image {
+      max-width: 516px;
+    }
+    &__description {
+      font-size: 16px;
+    }
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .about__image-background {
+      background-image: url(/src/images/aboutbg1282@2x.png);
+    }
   }
 }
