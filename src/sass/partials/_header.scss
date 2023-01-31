@@ -14,10 +14,7 @@
       display: none;
     }
 
-    .menu-toggler {
-      border: none;
-      background-color: transparent;
-
+    .menu-toggle {
       &__icon {
         display: block;
         stroke: $brandColor;
@@ -116,7 +113,7 @@
         display: block;
       }
 
-      .menu-toggler {
+      .menu-toggle {
         margin-right: 30px;
       }
     }
@@ -231,7 +228,7 @@
       padding-right: 115px;
     }
 
-    .menu-toggler {
+    .menu-toggle {
       display: none;
     }
   }

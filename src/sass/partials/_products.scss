@@ -3,7 +3,6 @@
   padding: 121px 20px 98px 20px;
   margin: 0 auto;
   &__label {
-    display: block;
     font-family: $accentFont, sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -55,7 +54,6 @@
     margin-top: 161px;
     margin-bottom: 66px;
     position: relative;
-    width: 100%;
     text-align: center;
     &--first::before {
       content: '';
@@ -162,8 +160,9 @@
       padding-right: 11px;
       line-height: 176%;
       margin-bottom: 40px;
-      height: 124px;
-      overflow: hidden;
+      &--long {
+        display: none;
+      }
     }
     &__btn {
       margin-bottom: 40px;
@@ -183,7 +182,7 @@
     }
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .products {
     padding: 127px 113px 119px 113px;
     &__label {
@@ -225,8 +224,6 @@
       padding-left: 44px;
       padding-right: 44px;
       margin-bottom: 62px;
-      height: 106px;
-      overflow: hidden;
     }
     &__btn {
       margin-bottom: 50px;

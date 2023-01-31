@@ -21,12 +21,12 @@
 
     <div class="header-buttons">
       <button
-        class="menu-toggler js-open-menu"
+        class="menu-toggle js-open-menu"
         type="button"
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
-        <svg class="menu-toggler__icon" width="20" height="20">
+        <svg class="menu-toggle__icon" width="20" height="20">
           <use href="images/icons.svg#icon-Burger"></use>
         </svg>
       </button>
@@ -98,10 +98,12 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button class="hero-milk__btn circle-btn">
-          <svg width="5" height="18" class="hero-milk__btn-icon circle-btn__arrow">
-            <use href="images/icons.svg#icon-arrow-right"></use>
-          </svg>
+        <button class="hero-milk__btn circle-btn" type="button">
+          <a href="#about" class="hero-milk__link">
+            <svg width="5" height="18" class="hero-milk__btn-icon circle-btn__arrow">
+              <use href="images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </a>
         </button>
       </div>
     </div>
