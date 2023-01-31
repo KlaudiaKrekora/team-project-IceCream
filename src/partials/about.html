@@ -3,20 +3,21 @@
     <p class="about__label">Tradition and love</p>
     <h2 class="about__heading">How it's made?</h2>
     <div class="about-box">
-      <img
-        class="about-box__image"
-        src="/src/images/about280.png"
-        srcset="
-          /src/images/about280.png     280w,
-          /src/images/about280@2x.png  560w,
-          /src/images/about340.png     340w,
-          /src/images/about340@2x.png  680w,
-          /src/images/about516.png     516w,
-          /src/images/about516@2x.png 1032w"
-        sizes="(min-width: 1200px) 516px, (min-width: 768px) 340px, 100vw "
-        alt="grafika przedstawia dzbanek mleka oraz głowe krowy w tle"
-      />
-
+      <picture class="about-box__image">
+        <source
+          srcset="/src/images/about516.png, /src/images/about516@2x.png 2x"
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="/src/images/about340.png, /src/images/about340@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <img
+          alt="grafika przedstawia dzbanek mleka oraz głowe krowy w tle"
+          src="/src/images/about280.png"
+          srcset="/src/images/about280@2x.png 2x"
+        />
+      </picture>
       <div class="about-box__milk">
         <p class="about-box__description">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
