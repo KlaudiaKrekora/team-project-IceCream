@@ -76,19 +76,15 @@
   list-style: none;
   margin-right: 0;
 
-  &__item {
+  &__icon {
+    fill: $alpha;
     width: 32px;
     height: 32px;
     background-color: #fea5bb;
     border-radius: 50%;
-    position: relative;
-  }
-  &__icon {
-    fill: $alpha;
-    position: absolute;
-    left: 50%;
-    top: 56%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -124,7 +120,7 @@
     }
   }
   .socials {
-    &__item {
+    &__icon {
       width: 34px;
       height: 34px;
       &:focus,
