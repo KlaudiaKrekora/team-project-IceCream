@@ -57,15 +57,14 @@
       padding-bottom: 17px;
     }
   }
+}
 
-  /*
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .about__image-background {
       background-image: url(/src/images/aboutbg320@2x.png);
     }
   }
-  */
-}
+ 
 
 @media screen and (min-width: 768px) {
   .about {
@@ -83,9 +82,9 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .about {
-    background-image: url(/src/images/aboutbg320.png);
+    background-image: url(/src/images/aboutbg1282.png);
   }
   .about-box {
     flex-direction: row;
@@ -95,6 +94,11 @@
     }
     &__description {
       font-size: 16px;
+    }
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .about__image-background {
+      background-image: url(/src/images/aboutbg1282@2x.png);
     }
   }
 }
