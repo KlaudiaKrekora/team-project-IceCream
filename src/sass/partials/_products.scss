@@ -160,8 +160,9 @@
       padding-right: 11px;
       line-height: 176%;
       margin-bottom: 40px;
-      height: 124px;
-      overflow: hidden;
+      &--long {
+        display: none;
+      }
     }
     &__btn {
       margin-bottom: 40px;
@@ -223,8 +224,6 @@
       padding-left: 44px;
       padding-right: 44px;
       margin-bottom: 62px;
-      height: 106px;
-      overflow: hidden;
     }
     &__btn {
       margin-bottom: 50px;
