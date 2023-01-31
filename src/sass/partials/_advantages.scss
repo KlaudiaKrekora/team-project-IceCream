@@ -94,7 +94,7 @@
     background-size: contain;
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(/src/images/icon3@x2.png);
-=======
+
   &__paragraph {
     font-weight: $bold;
     font-size: 12px;
@@ -148,4 +148,4 @@
       background-image: url('../images/icon3@x2.png');
     }
   }
-}
+  }
