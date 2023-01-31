@@ -1,115 +1,103 @@
 .advantages {
-    background-color: $fadedBgColor;
-    padding: 0 0 59px;
-    &__item {
-        padding-top: 66px;
-        margin-bottom: 38px;
-        position: relative;
-    }
-    &__heading-hidden {
-        visibility: hidden;
-    }
-    &__list {
-        list-style: none;
-    }
-    &__second-heading {
-        color: $brandColor;
-        font-weight: $thick;
-        font-family: $accentFont;
-        font-size: 36px;
-        line-height: 1.13;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-        letter-spacing: 0.04em;
-    }
-    &____paragraph {
-        font-family: $mainFont;
-        font-weight: $bold;
-        font-size: 12px;
-        line-height: 1.66;
-    }
-}
+  background-color: $fadedBgColor;
+  padding: 39px 20px 97px;
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    padding-top: 66px;
+    position: relative;
+    max-width: 280px;
 
-.advantages__second-heading--image-first::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: '';
-    width: 33px;
-    height: 50px;
-    background-image: url('../images/icon1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url('../images/icon1@x2.png');
+    &:not(:last-child) {
+      margin-bottom: 38px;
     }
-}
+  }
+  &__heading {
+    display: none;
+  }
+  &__second-heading {
+    color: $brandColor;
+    font-weight: $thick;
+    font-family: $accentFont;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 0.04em;
 
-.advantages__second-heading--image-second::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: '';
-    width: 50px;
-    height: 50px;
-    background-image: url('../images/icon2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url('../images/icon2@x2.png');
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      height: 50px;
+      background-size: contain;
     }
-}
 
-.advantages__second-heading--image-third::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: '';
-    width: 44px;
-    height: 50px;
-    background-image: url('../images/icon3.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url('../images/icon3@x2.png');
+    &--image-first::before {
+      width: 33px;
+      background-image: url('../images/icon1.png');
     }
+    &--image-second::before {
+      width: 50px;
+      background-image: url('../images/icon2.png');
+    }
+    &--image-third::before {
+      width: 44px;
+      background-image: url('../images/icon3.png');
+    }
+  }
+
+  &__paragraph {
+    font-weight: $bold;
+    font-size: 12px;
+    line-height: 1.7;
+  }
 }
 
 @media (min-width: 768px) {
-    .advantages {
-        &__list {
-            display: flex;
-            gap: 60px;
-            flex-wrap: nowrap;
-        }
-        &__second-heading {
-            margin-top: 15px;
-            font-size: 48px;
-            line-height: 1.14;
-        }
-        &paragraph {
-            font-size: 14px;
-            line-height: 1.71;
-        }
+  .advantages {
+    &__list {
+      display: flex;
+      gap: 64px;
+      flex-wrap: nowrap;
     }
+    &__second-heading {
+      margin-top: 15px;
+      font-size: 48px;
+    }
+    &__paragraph {
+      font-size: 14px;
+      line-height: 1.74;
+    }
+  }
 }
 
 @media (min-width: 1280px) {
-    .advantages {
-        background-color: rgba($color: $fadedBgColor, $alpha: 0.3);
-        &__list {
-            gap: 100px;
-        }
-        &__second-heading {
-            font-size: 58px;
-            line-height: 1.13;
-        }
-        &paragraph {
-            font-size: 16px;
-            line-height: 1.75;
-        }
+  .advantages {
+    padding-left: 115px;
+    &__list {
+      gap: 30px;
     }
+    &__second-heading {
+      font-size: 58px;
+    }
+    &__paragraph {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages__second-heading {
+    &--image-first::before {
+      background-image: url('../images/icon1@x2.png');
+    }
+    &--image-second::before {
+      background-image: url('../images/icon2@x2.png');
+    }
+    &--image-third::before {
+      background-image: url('../images/icon3@x2.png');
+    }
+  }
 }
