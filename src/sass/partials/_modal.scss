@@ -26,6 +26,38 @@
   transition-duration: 300ms;
   transition-timing-function: linear;
   transform: scale(1);
+  &--products-first {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    position: absolute;
+    width: calc(100vw - 40px);
+    max-width: 280px;
+    min-width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    padding: 60px 20px;
+    margin: 0 auto;
+    background-color: $complementaryColor;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    visibility: 1;
+    pointer-events: initial;
+    transition: transform 500ms ease;
+  }
+  &--products-second {
+    @extend .modal--products-first;
+    background-color: $accentColor;
+  }
+  &--products-third {
+    @extend .modal--products-first;
+    background-color: $secondaryAccentColor;
+  }
 
   &__button {
     position: absolute;
@@ -38,6 +70,42 @@
     margin: 8px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     color: rgba(0, 0, 0, 1);
+    &--products {
+      border: 1px solid $alpha;
+      color: $brandColor;
+      top: 8px;
+      right: 8px;
+      cursor: pointer;
+    }
+  }
+  &__title {
+    font-family: $accentFont, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $alpha;
+    text-align: center;
+  }
+  &__subtext {
+    font-family: $mainFont, sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $alpha;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+  }
+  &__description {
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 152%;
+    letter-spacing: 0.04em;
+    color: $alpha;
+    text-align: center;
   }
 }
 .is-hidden {

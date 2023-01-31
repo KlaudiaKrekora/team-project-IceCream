@@ -1,15 +1,20 @@
 <!-- PRODUCTS -->
 <section class="products" id="products">
-  <a name="products" class="products__label">100% natural</a>
+  <p class="products__label">100% natural</p>
   <h2 class="products__title">products</h2>
+  <!-- zmienić klasy BEM -->
   <ul class="products__list">
     <li class="products__item">
       <h3 class="products__name products__name--first">ice cream</h3>
       <p class="products__description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et. dolore magna aliqua facilisis.
+        labore et.<span class="products__description--long">dolore magna aliqua facilisis.</span>
       </p>
-      <button class="circle-btn circle-btn--products products__btn">
+      <button
+        type="button"
+        class="products__btn circle-btn circle-btn--products"
+        data-modal-open--productsFirst
+      >
         <svg width="12" height="36" class="circle-btn__arrow circle-btn__arrow--products">
           <use href="images/icons.svg#icon-arrow-right"></use>
         </svg>
@@ -19,9 +24,13 @@
       <h3 class="products__name products__name--second">ice coffee</h3>
       <p class="products__description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et. dolore magna aliqua facilisis.
+        labore et.<span class="products__description--long">dolore magna aliqua facilisis.</span>
       </p>
-      <button class="circle-btn circle-btn--products products__btn">
+      <button
+        type="button"
+        class="circle-btn circle-btn--products products__btn"
+        data-modal-open--productsSecond
+      >
         <svg width="12" height="36" class="circle-btn__arrow circle-btn__arrow--products">
           <use href="images/icons.svg#icon-arrow-right"></use>
         </svg>
@@ -31,13 +40,82 @@
       <h3 class="products__name products__name--third">milkshakes</h3>
       <p class="products__description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et. dolore magna aliqua facilisis.
+        labore et.<span class="products__description--long">dolore magna aliqua facilisis.</span>
       </p>
-      <button class="circle-btn circle-btn--products products__btn">
+      <button
+        type="button"
+        class="circle-btn circle-btn--products products__btn"
+        data-modal-open--productsThird
+      >
         <svg width="12" height="36" class="circle-btn__arrow circle-btn__arrow--products">
           <use href="images/icons.svg#icon-arrow-right"></use>
         </svg>
       </button>
     </li>
   </ul>
+  <!-- FIRST MODAL -->
+  <div class="backdrop-modal is-hidden" data-modal--productsFirst>
+    <div class="modal modal--products-first">
+      <button class="modal__button modal__button--products" data-modal-close--productsFirst>
+        &times;
+      </button>
+      <span class="modal__title">ice cream</span>
+      <img src="images/dots.png" width="26" />
+      <p class="modal__subtext">
+        gluten free<br />
+        lactose free<br />
+        simply magic on your tongue
+      </p>
+      <p class="modal__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et. dolore magna aliqua facilisis. Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. At quidem aspernatur necessitatibus odio molestias corrupti provident ut
+        eveniet architecto amet quaerat cupiditate assumenda, neque mollitia molestiae repellat
+        quibusdam nihil eligendi!
+      </p>
+    </div>
+  </div>
+  <!-- SECOND MODAL -->
+  <div class="backdrop-modal is-hidden" data-modal--productsSecond>
+    <div class="modal modal--products-second">
+      <button class="modal__button modal__button--products" data-modal-close--productsSecond>
+        &times;
+      </button>
+      <span class="modal__title">ice coffee</span>
+      <img src="images/dots.png" width="26" />
+      <p class="modal__subtext">
+        gluten free<br />
+        lactose free<br />
+        simply magic on your tongue
+      </p>
+      <p class="modal__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et. dolore magna aliqua facilisis. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Alias, nam. Aliquid eaque veritatis aperiam aut voluptatem eveniet consequuntur iure
+        voluptatibus? Ea ad nesciunt tempora alias dolore debitis pariatur harum vitae.
+      </p>
+    </div>
+  </div>
+  <!-- THIRD MODAL -->
+  <div class="backdrop-modal is-hidden" data-modal--productsThird>
+    <div class="modal modal--products-third">
+      <button class="modal__button modal__button--products" data-modal-close--productsThird>
+        &times;
+      </button>
+      <span class="modal__title">milkshakes</span>
+      <img src="images/dots.png" width="26" />
+      <p class="modal__subtext">
+        gluten free<br />
+        lactose free<br />
+        simply magic on your tongue
+      </p>
+      <p class="modal__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et. dolore magna aliqua facilisis. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Aspernatur, nobis quia! Eligendi voluptatibus dignissimos sequi! Dolorem, illo
+        perspiciatis. Repellat in odio alias molestias commodi obcaecati quaerat adipisci aliquam
+        impedit error?
+      </p>
+    </div>
+  </div>
 </section>

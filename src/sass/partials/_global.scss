@@ -5,6 +5,10 @@
   font-family: $mainFont;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 480px;
   margin: 0 auto;
