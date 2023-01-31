@@ -66,6 +66,9 @@
     color: $fillerColor;
     align-self: center;
     padding-bottom: 25px;
+    &--heart {
+      color: red;
+    }
   }
 }
 .socials {
