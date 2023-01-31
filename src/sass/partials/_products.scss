@@ -3,7 +3,6 @@
   padding: 121px 20px 98px 20px;
   margin: 0 auto;
   &__label {
-    display: block;
     font-family: $accentFont, sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -55,7 +54,6 @@
     margin-top: 161px;
     margin-bottom: 66px;
     position: relative;
-    width: 100%;
     text-align: center;
     &--first::before {
       content: '';
@@ -183,7 +181,7 @@
     }
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .products {
     padding: 127px 113px 119px 113px;
     &__label {
