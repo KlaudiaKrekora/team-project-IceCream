@@ -1,3 +1,5 @@
+<!-- ABOUT - How it's made -->
+
 <section id="about" class="about">
   <div class="container">
     <p class="about__label">Tradition and love</p>
@@ -29,12 +31,33 @@
           maximus. Cras massa nibh, tincidunt. <br />Aliquam erat volutpat. Aenean accumsan.
         </p>
         <div class="about-box">
-          <button type="button" class="button button--reversed button--mid">
+          <button type="button" class="button button--reversed button--mid" data-modal-open--about>
             Read more
             <svg width="6" height="10" class="button__chevron">
               <use href="images/icons.svg#icon-Vector-1"></use>
             </svg>
           </button>
+
+          <!-- MODAL ABOUT -->
+
+          <div class="backdrop-modal is-hidden" data-modal--about>
+            <div class="modal modal--about">
+              <button class="modal__button modal__button--about" data-modal-close--about>
+                &times;
+              </button>
+              <span class="modal__title">How it's made</span>
+              <p class="modal__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et. dolore magna aliqua facilisis. Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. At quidem aspernatur necessitatibus odio molestias
+                corrupti provident ut eveniet architecto amet quaerat cupiditate assumenda, neque
+                mollitia molestiae repellat quibusdam nihil eligendi! Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Rem culpa voluptas dicta eos? Quaerat repellendus iure
+                cum, praesentium voluptatem molestiae nostrum, eligendi vel eos velit odit incidunt
+                a, ut non.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
