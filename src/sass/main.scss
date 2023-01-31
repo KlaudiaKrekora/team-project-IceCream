@@ -9,12 +9,8 @@
 @import 'partials/typography';
 // GLOBAL
 @import 'partials/global';
-@import 'partials/about';
-@import 'partials/button';
 // BUTTONS
 @import 'partials/buttons';
-// ELLIPSIS
-@import 'partials/ellipsis';
 // HEADER
 @import 'partials/header';
 // MENU
@@ -35,3 +31,6 @@
 @import './partials/footer';
 //MODAL
 // @import 'partials/modal';
+//CONTACT MODAL
+@import 'partials/modal-contact';
+
