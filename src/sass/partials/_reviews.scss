@@ -5,7 +5,7 @@
 }
 
 .reviews__container {
-  padding-top: 20px;
+  padding-top: 80px;
 }
 
 .customer {
@@ -47,9 +47,22 @@
   }
 
   &__name {
-    margin-top: 18px;
+    position: relative;
+    margin-top: 52px;
     font-size: 14px;
     font-weight: $regular;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -24px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 32px;
+      height: 4px;
+      background-size: contain;
+      background-image: url('../images/reddots.png');
+    }
   }
 }
 
@@ -81,6 +94,7 @@
     }
 
     &__name {
+      margin-top: 42px;
       font-size: 16px;
     }
   }
@@ -107,6 +121,7 @@
     }
 
     &__name {
+      margin-top: 34px;
       font-size: 20px;
     }
   }
