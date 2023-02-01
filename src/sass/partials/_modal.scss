@@ -49,6 +49,10 @@
     @extend .modal--products-first;
     background-color: $secondaryAccentColor;
   }
+  &--about {
+    @extend .modal--products-first;
+    background-color: $fadedBgColor;
+  }
 
   &__button {
     position: absolute;
@@ -68,6 +72,7 @@
       right: 8px;
       cursor: pointer;
     }
+
   }
   &__title {
     font-family: $accentFont, sans-serif;
@@ -78,6 +83,11 @@
     color: $alpha;
     text-align: center;
   }
+    &__title--about {
+      @extend .modal__title;
+      color: $brandColor;
+    }
+
   &__subtext {
     font-family: $mainFont, sans-serif;
     font-weight: 400;
@@ -97,8 +107,13 @@
     letter-spacing: 0.04em;
     color: $alpha;
     text-align: center;
+
+    &--about {
+      color: $fillerColor; 
+    }
   }
 }
+
 .is-hidden {
   pointer-events: none;
   visibility: hidden;
