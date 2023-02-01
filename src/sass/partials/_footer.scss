@@ -40,7 +40,7 @@
     margin-bottom: 65px;
   }
   &__contact {
-    display: inline-flex;
+    display: flex;
     gap: 4px;
     font-size: 12px;
   }
@@ -56,18 +56,17 @@
     color: $lineColor;
   }
   &__copy-rights {
+    padding: 22px 70px 25px;
     font-size: 14px;
-    width: 140px;
     line-height: 152%;
     font-weight: $bold;
     color: $fillerColor;
-    align-self: center;
-    padding-bottom: 25px;
+    text-align: center;
   }
 }
 
 .socials {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   gap: 28px;
   align-self: flex-end;
@@ -83,6 +82,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.2s;
+    &:focus,
+    &:hover {
+      background-color: $brandColor;
+    }
   }
 }
 .contacts__link--brand-color {
@@ -109,14 +113,12 @@
       }
     }
     &__contact-box {
-      align-self: flex-start;
       padding-bottom: 91px;
     }
     &__line {
       bottom: 73px;
     }
     &__copy-rights {
-      width: unset;
       padding-bottom: 18px;
     }
   }
@@ -124,10 +126,6 @@
     &__icon {
       width: 34px;
       height: 34px;
-      &:focus,
-      &:hover {
-        background-color: $brandColor;
-      }
     }
   }
 }
