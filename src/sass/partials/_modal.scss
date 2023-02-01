@@ -12,43 +12,34 @@
 }
 .modal {
   position: absolute;
-  width: 200px;
-  height: 400px;
-  min-width: 350px;
+  width: auto;
+  height: auto;
+  min-width: 450px;
+  max-width: 500px;
   background-color: $alpha;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  top: 93px;
-  left: 280px;
-  margin: 0 15px;
-  transition-property: transform;
-  transition-duration: 300ms;
-  transition-timing-function: linear;
-  transform: scale(1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  top: 100px;
+  left: 50%;
+  margin: 0 auto;
+  border-radius: 24px;
+  transform: translate(-50%) scale(1);
+  transition: transform 500ms ease;
   &--products-first {
     display: flex;
     flex-direction: column;
     gap: 30px;
     align-items: center;
-    position: absolute;
     width: calc(100vw - 40px);
     max-width: 280px;
     min-width: auto;
-    height: auto;
     top: 50%;
-    left: 50%;
     padding: 60px 20px;
-    margin: 0 auto;
     background-color: $complementaryColor;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 24px;
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     visibility: 1;
     pointer-events: initial;
-    transition: transform 500ms ease;
   }
   &--products-second {
     @extend .modal--products-first;
@@ -61,15 +52,15 @@
 
   &__button {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 30px;
-    height: 30px;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: $alpha;
     margin: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 1);
+    border: 1px solid $brandColor;
+    color: $brandColor;
     &--products {
       border: 1px solid $alpha;
       color: $brandColor;
@@ -115,5 +106,87 @@
 
   & .modal {
     transform: scale(0);
+  }
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 20px;
+
+  &__header {
+    font-family: $accentFont;
+    color: $brandColor;
+    font-size: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 0.04em;
+    text-align: center;
+  }
+
+  &__label {
+    font-family: $mainFont;
+    font-weight: $bold;
+    font-size: 15px;
+    color: $brandColor;
+    margin-bottom: 5px;
+  }
+
+  &__box {
+    position: relative;
+  }
+
+  &__input {
+    color: $brandColor;
+    width: 100%;
+    height: 30px;
+    border: 1px solid $secondaryBrandColor;
+    font-size: 12px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+
+    &:focus + .modal-form__svg {
+      fill: $brandColor;
+    }
+
+    &:focus {
+      outline: 0;
+      border: 1px solid $brandColor;
+    }
+  }
+
+  &__svg {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    fill: $secondaryBrandColor;
+  }
+
+  &__button {
+    @extend .button;
+    @extend .button--mid;
+    margin: 0 auto;
+  }
+
+  &__select {
+    @extend .modal-form__input;
+    padding: 0 5px;
+    color: $secondaryBrandColor;
+    margin-top: 5px;
+
+    &:focus {
+      color: $brandColor;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-form__products {
+    display: flex;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .modal-form__header {
+    font-size: 25px;
   }
 }

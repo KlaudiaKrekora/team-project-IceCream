@@ -1,36 +1,17 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
-
-// Style dla pliku z przykładem HTML fragmentu
-
-// TYPOGRAPHY
 @import 'partials/typography';
-// GLOBAL
 @import 'partials/global';
-// BUTTONS
 @import 'partials/buttons';
-// HEADER
+
 @import 'partials/header';
-// MENU
 @import 'partials/menu';
-// PRODUCTS
 @import 'partials/products';
-// ABOUT
 @import 'partials/about';
-// ADVANTAGES
 @import 'partials/advantages';
-// GALLERY
 @import 'partials/gallery';
-// REVIEWS
 @import 'partials/reviews';
-// CONTACTS
 @import 'partials/contacts';
-// FOOTER
 @import './partials/footer';
-//MODAL
+
 @import 'partials/modal';
-//CONTACT MODAL
 @import 'partials/modal-contact';
 
