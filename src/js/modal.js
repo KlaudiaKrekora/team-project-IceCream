@@ -57,4 +57,17 @@
     refs.modal.classList.toggle('is-hidden');
   }
 })();
+
+// MODAL ABOUT
+(() => {
+  const aboutBtn = document.querySelector('[data-modal-open--about]');
+  const abouModaltBtn = document.querySelector('[data-modal-close--about]');
+  const aboutModal = document.querySelector('[data-modal--about]');
+  function toggleModalAbout() {
+    aboutModal.classList.toggle('is-hidden');
+  }
+  aboutBtn.addEventListener('click', toggleModalAbout);
+  abouModaltBtn.addEventListener('click', toggleModalAbout);
+})();
+
 // MOBILE MODAL
