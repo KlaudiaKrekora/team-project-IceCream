@@ -3,10 +3,13 @@
 .about {
   padding-top: 125px;
   background-color: $fadedBgColor;
-  background-image: url(/src/images/aboutbg320.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: bottom 60px right 0;
+
+  &__container {
+    background-image: url('/src/images/aboutbg320.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom 60px right 0;
+  }
 
   &__title {
     width: 200px;
@@ -37,26 +40,32 @@
 }
 
 .about-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 46px;
-
   &__image {
-    max-width: 280px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__wrapper {
+    margin-top: 46px;
+    padding: 0 52px;
   }
 
   &__description {
-    padding: 0 35px 50px 35px;
-    font-family: $mainFont;
+    margin-bottom: 42px;
     font-weight: $regular;
     font-size: 12px;
     line-height: 1.58;
 
     &--grey {
+      margin-bottom: 10px;
       color: $fillerColor;
-      padding-bottom: 17px;
     }
+  }
+
+  &__button {
+    margin-top: 7px;
+    padding-inline: 35px;
   }
 }
 
@@ -170,49 +179,78 @@
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .about__image-background {
-    background-image: url(/src/images/aboutbg320@2x.png);
+  .about__container {
+    background-image: url('/src/images/aboutbg320@2x.png');
   }
 }
 
 @media screen and (min-width: 768px) {
   .about {
-    background-image: none;
+    &__container {
+      padding-bottom: 30px;
+      background-image: none;
+    }
+    &__label {
+      font-size: 26px;
+    }
+    &__heading {
+      font-size: 48px;
+    }
   }
 
   .about-box {
-    flex-direction: row;
+    display: flex;
 
-    &__image {
-      max-width: 340px;
+    &__wrapper {
+      padding: 0 20px;
     }
 
     &__description {
       font-size: 14px;
     }
+
+    &__button {
+      margin-top: 52px;
+    }
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .about {
-    background-image: url(/src/images/aboutbg1282.png);
+    background-image: url('/src/images/aboutbg1282.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom -20px right 0;
+
+    &__label {
+      font-size: 30px;
+    }
+    &__heading {
+      font-size: 58px;
+    }
   }
 
   .about-box {
-    flex-direction: row;
-
-    &__image {
-      max-width: 516px;
+    &__wrapper {
+      padding-left: 74px;
+      padding-right: 100px;
     }
 
     &__description {
       font-size: 16px;
+      &--grey {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__button {
+      margin-top: 20px;
     }
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .about__image-background {
-      background-image: url(/src/images/aboutbg1282@2x.png);
+    .about {
+      background-image: url('/src/images/aboutbg1282@2x.png');
     }
   }
 }
