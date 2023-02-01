@@ -66,8 +66,9 @@
     color: $fillerColor;
     align-self: center;
     padding-bottom: 25px;
+
     &--heart {
-      color: red;
+      color: $brandColorDarker;
     }
   }
 }
@@ -155,7 +156,7 @@
       font-size: 14px;
     }
     &__line {
-      bottom: 45px;
+      bottom: 60px;
     }
     &__copy-rights {
       padding-bottom: 10px;

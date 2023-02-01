@@ -1,7 +1,72 @@
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <div class="easteregg__wrapper">
+    <div class="grid-container">
+      <div class="grid-item__wrapper">
+        <div class="grid-item">
+          <img class="easteregg__avatar" src="./images/jane-doe.jpg" alt="Dev 5" width="640" />
+          <div class="easteregg__overlay">
+            <a
+              class="socials__icon"
+              href="https://github.com/kgryguc"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg width="18.82px" height="18.82px">
+                <use href="./images/icons.svg#icon-github"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img class="easteregg__avatar" src="./images/jane-doe.jpg" alt="Dev 5" width="640" />
+      </div>
+      <div class="grid-item">
+        <img class="easteregg__avatar" src="./images/jane-doe.jpg" alt="Dev 5" width="640" />
+      </div>
+      <div class="grid-item">
+        <img class="easteregg__avatar" src="./images/jane-doe.jpg" alt="Dev 5" width="640" />
+      </div>
+      <div class="grid-item">
+        <img class="easteregg__avatar" src="./images/jane-doe.jpg" alt="Dev 5" width="640" />
+      </div>
+      <div class="grid-item">
+        <img class="easteregg__avatar" src="./images/jane-doe.jpg" alt="Dev 5" width="640" />
+      </div>
+      <div class="grid-item">
+        <img class="easteregg__avatar" src="./images/jane-doe.jpg" alt="Dev 5" width="640" />
+      </div>
+      <div class="grid-item">
+        <img class="easteregg__avatar" src="./images/jane-doe.jpg" alt="Dev 5" width="640" />
+      </div>
+      <div class="grid-item">
+        <img class="easteregg__avatar" src="./images/jane-doe.jpg" alt="Dev 5" width="640" />
+      </div>
+      <div class="grid-item">
+        <img class="easteregg__avatar" src="./images/jane-doe.jpg" alt="Dev 5" width="640" />
+      </div>
+    </div>
+    <img
+      class="easteregg__image"
+      src="./images/team5_logo.png"
+      alt="Dev 5"
+      width="250"
+      height="250"
+    />
+  </div>
 </div>
+
+<script>
+  /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+  function openNav() {
+    document.getElementById('mySidenav').style.height = '330px';
+    document.getElementById('footer').style.marginTop = '330px';
+  }
+
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+    document.getElementById('mySidenav').style.height = '0';
+    document.getElementById('footer').style.marginTop = '0';
+  }
+</script>
