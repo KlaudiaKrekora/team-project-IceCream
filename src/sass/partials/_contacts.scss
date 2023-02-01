@@ -3,7 +3,7 @@
   position: relative;
   margin-top: 86px;
 
-  &__caption {
+  &__heading {
     display: none;
   }
 
@@ -37,13 +37,12 @@
     border-radius: 4px;
     background-color: $accentColor;
     padding: 1px 24px;
-    max-width: 80px;
+    display: inline-block;
     margin-bottom: 25px;
   }
 
   &__label--secondary {
     background-color: $secondaryAccentColor;
-    max-width: 130px;
   }
 
   &__header {
@@ -85,7 +84,7 @@
     line-height: 1.9;
     text-transform: uppercase;
 
-    &:not(last-of-type) {
+    &:not(:last-of-type) {
       margin-bottom: 10px;
     }
   }
@@ -103,7 +102,6 @@
     font-weight: $regular;
     letter-spacing: 0.04em;
     text-decoration: none;
-    cursor: pointer;
     font-style: normal;
   }
 
@@ -177,13 +175,11 @@
       font-size: 16px;
       border-radius: 6px;
       padding: 5px 16px;
-      max-width: 73px;
       margin-bottom: 30px;
     }
 
     &__label--secondary {
       background-color: $secondaryAccentColor;
-      max-width: 138px;
     }
 
     &__header {
@@ -207,7 +203,7 @@
     &__time {
       font-size: 14px;
 
-      &:not(last-of-type) {
+      &:not(:last-of-type) {
         margin-bottom: 16px;
       }
     }
@@ -280,7 +276,7 @@
     &__time {
       font-size: 16px;
 
-      &:not(last-of-type) {
+      &:not(:last-of-type) {
         margin-bottom: 15px;
       }
     }

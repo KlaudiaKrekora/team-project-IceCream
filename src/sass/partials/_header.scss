@@ -2,7 +2,7 @@
   background-color: $complementaryColor;
   z-index: 3;
 
-  &__box {
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,10 +14,7 @@
       display: none;
     }
 
-    .menu-toggler {
-      border: none;
-      background-color: transparent;
-
+    .menu-toggle {
       &__icon {
         display: block;
         stroke: $brandColor;
@@ -27,9 +24,6 @@
   }
 }
 
-.menu-toggle {
-  border: none;
-}
 .nav {
   display: none;
 }
@@ -69,17 +63,21 @@
     left: 20px;
     bottom: 160px;
     z-index: 2;
+
+    & .button--reversed {
+      margin-left: 8px;
+    }
   }
 
   &__title {
+    margin-bottom: 20px;
     font-family: $accentFont;
-    font-weight: 400;
+    font-weight: $thick;
     font-size: 26px;
     letter-spacing: 0.04em;
     color: $alpha;
     text-transform: uppercase;
     background-color: transparent;
-    margin-bottom: 20px;
 
     &--boldred {
       font-size: 48px;
@@ -99,7 +97,7 @@
   .header {
     position: relative;
 
-    &__box {
+    &__container {
       position: absolute;
       top: 0;
       left: 0;
@@ -115,7 +113,7 @@
         display: block;
       }
 
-      .menu-toggler {
+      .menu-toggle {
         margin-right: 30px;
       }
     }
@@ -129,15 +127,13 @@
       right: 137px;
       width: 324px;
       height: 322px;
-      background-image: url('../images/circlebg.png');
-      background-size: 100%;
       z-index: -1;
 
       &__image {
-        position: absolute;
-        left: 50%;
-        top: 10px;
-        transform: translateX(-50%);
+        left: 44%;
+        top: 32px;
+        width: 143px;
+        height: 336px;
       }
     }
 
@@ -213,11 +209,6 @@
     &__btn {
       display: block;
     }
-
-    &__img {
-      width: 124px;
-      height: 126px;
-    }
   }
 
   .hero-person {
@@ -231,31 +222,33 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .menu-toggler {
-    display: none;
+  .header {
+    &__container {
+      padding-left: 46px;
+      padding-right: 115px;
+    }
+
+    .menu-toggle {
+      display: none;
+    }
   }
+
   .nav {
     display: flex;
     gap: 35px;
-    list-style-type: none;
+    list-style: none;
 
     &__link {
       text-decoration: none;
       color: $alpha;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.3rem;
+      font-weight: $bold;
+      transition: color 0.3s;
 
       &:focus,
       &:hover {
         color: $brandColor;
       }
     }
-  }
-  .header__box {
-    margin: 0 auto;
-    padding-left: 46px;
-    padding-right: 115px;
   }
 
   .hero {
@@ -266,7 +259,6 @@
       right: 267px;
       width: 538px;
       height: 538px;
-      background-image: url('../images/circlebg.png');
 
       &__image {
         top: 56px;
@@ -278,7 +270,10 @@
     &__heading-box {
       left: 115px;
       bottom: 292px;
-      line-height: 2.72rem;
+
+      & .button--reversed {
+        margin-left: 15px;
+      }
     }
 
     &__title {
@@ -286,7 +281,6 @@
 
       &--boldred {
         font-size: 58px;
-        line-height: 3.28rem;
       }
     }
   }
@@ -294,9 +288,9 @@
   .hero-person {
     width: 293px;
     height: 232px;
-    bottom: 0;
     right: 109px;
   }
+
   .hero-milk {
     left: 77px;
     bottom: 45px;
@@ -311,7 +305,7 @@
       width: 200px;
       margin-bottom: 20px;
       font-size: 14px;
-      line-height: 1.23;
+      line-height: 1.4;
     }
 
     &__btn {
@@ -319,19 +313,22 @@
       height: 26px;
     }
 
-    &__svg {
+    &__btn-icon {
       width: 7px;
-      height: 9px;
+      height: 26px;
     }
   }
+
   .hero-numbers {
     right: 115px;
     top: 160px;
   }
+
   .hero-number {
     &__circle {
       height: 30px;
       width: 30px;
+      right: -16px;
     }
 
     &__number {
