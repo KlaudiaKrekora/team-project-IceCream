@@ -47,10 +47,7 @@
   &__contact-title {
     color: $beta;
   }
-  &__contact-phone {
-    text-decoration: none;
-    color: $brandColor;
-  }
+
   &__line {
     position: absolute;
     left: 0px;
@@ -68,6 +65,7 @@
     padding-bottom: 25px;
   }
 }
+
 .socials {
   display: inline-flex;
   justify-content: center;
@@ -76,20 +74,19 @@
   list-style: none;
   margin-right: 0;
 
-  &__item {
+  &__icon {
+    fill: $alpha;
     width: 32px;
     height: 32px;
     background-color: #fea5bb;
     border-radius: 50%;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  &__icon {
-    fill: $alpha;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+}
+.contacts__link--brand-color {
+  color: $brandColor;
 }
 
 @media screen and (min-width: 768px) {
@@ -113,6 +110,7 @@
     }
     &__contact-box {
       align-self: flex-start;
+      padding-bottom: 91px;
     }
     &__line {
       bottom: 73px;
@@ -123,7 +121,7 @@
     }
   }
   .socials {
-    &__item {
+    &__icon {
       width: 34px;
       height: 34px;
       &:focus,
