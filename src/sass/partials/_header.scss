@@ -111,6 +111,7 @@
 
       &__cta {
         display: block;
+        transition: visibility 0.2s, opacity 0.2s;
       }
 
       .menu-toggle {
