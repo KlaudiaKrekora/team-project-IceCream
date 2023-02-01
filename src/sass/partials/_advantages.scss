@@ -12,7 +12,7 @@
     &:not(:last-child) {
       margin-bottom: 38px;
     }
-   }
+  }
   &__heading {
     display: none;
   }
@@ -20,7 +20,7 @@
     color: $brandColor;
     font-weight: $thick;
     font-family: $accentFont;
-    font-size: 36px;
+    font-size: 2.25rem;
     text-transform: uppercase;
     margin-bottom: 15px;
     letter-spacing: 0.04em;
@@ -33,24 +33,24 @@
       height: 50px;
       background-size: contain;
     }
-    
+
     &--image-first::before {
       width: 33px;
       background-image: url('../images/icon1.png');
     }
-      &--image-second::before {
+    &--image-second::before {
       width: 50px;
       background-image: url('../images/icon2.png');
     }
-        &--image-third::before {
+    &--image-third::before {
       width: 44px;
       background-image: url('../images/icon3.png');
     }
   }
-  
-   &__paragraph {
+
+  &__paragraph {
     font-weight: $bold;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 1.7;
   }
 }
@@ -62,12 +62,12 @@
       gap: 64px;
       flex-wrap: nowrap;
     }
-     &__second-heading {
+    &__second-heading {
       margin-top: 15px;
-      font-size: 48px;
+      font-size: 3rem;
     }
     &__paragraph {
-      font-size: 14px;
+      font-size: 0.875rem;
       line-height: 1.74;
     }
   }
@@ -80,10 +80,10 @@
       gap: 30px;
     }
     &__second-heading {
-      font-size: 58px;
+      font-size: 3.625rem;
     }
     &__paragraph {
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 }
@@ -96,7 +96,7 @@
     &--image-second::before {
       background-image: url('../images/icon2@x2.png');
     }
-      &--image-third::before {
+    &--image-third::before {
       background-image: url('../images/icon3@x2.png');
     }
   }

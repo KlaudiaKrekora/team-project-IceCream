@@ -19,7 +19,7 @@
     color: $secondaryBrandColor;
     font-family: $accentFont;
     font-weight: $thick;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.17;
     text-align: center;
     text-transform: uppercase;
@@ -30,7 +30,7 @@
     color: $brandColor;
     font-family: $accentFont;
     font-weight: $thick;
-    font-size: 34px;
+    font-size: 2.125rem;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.04em;
@@ -54,7 +54,7 @@
   &__description {
     margin-bottom: 42px;
     font-weight: $regular;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 1.58;
 
     &--grey {
@@ -82,10 +82,10 @@
       background-image: none;
     }
     &__label {
-      font-size: 26px;
+      font-size: 1.625rem;
     }
     &__heading {
-      font-size: 48px;
+      font-size: 3rem;
     }
   }
 
@@ -97,7 +97,7 @@
     }
 
     &__description {
-      font-size: 14px;
+      font-size: 0.875rem;
     }
 
     &__button {
@@ -114,10 +114,10 @@
     background-position: bottom -20px right 0;
 
     &__label {
-      font-size: 30px;
+      font-size: 1.875rem;
     }
     &__heading {
-      font-size: 58px;
+      font-size: 3.625rem;
     }
   }
 
@@ -128,7 +128,7 @@
     }
 
     &__description {
-      font-size: 16px;
+      font-size: 1rem;
       &--grey {
         margin-bottom: 20px;
       }
