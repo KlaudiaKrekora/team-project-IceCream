@@ -40,17 +40,14 @@
     margin-bottom: 65px;
   }
   &__contact {
-    display: inline-flex;
+    display: flex;
     gap: 4px;
     font-size: 12px;
   }
   &__contact-title {
     color: $beta;
   }
-  &__contact-phone {
-    text-decoration: none;
-    color: $brandColor;
-  }
+
   &__line {
     position: absolute;
     left: 0px;
@@ -59,37 +56,41 @@
     color: $lineColor;
   }
   &__copy-rights {
+    padding: 22px 70px 25px;
     font-size: 14px;
-    width: 140px;
     line-height: 152%;
     font-weight: $bold;
     color: $fillerColor;
-    align-self: center;
-    padding-bottom: 25px;
+    text-align: center;
   }
 }
+
 .socials {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   gap: 28px;
   align-self: flex-end;
   list-style: none;
   margin-right: 0;
 
-  &__item {
+  &__icon {
+    fill: $alpha;
     width: 32px;
     height: 32px;
     background-color: #fea5bb;
     border-radius: 50%;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+    &:focus,
+    &:hover {
+      background-color: $brandColor;
+    }
   }
-  &__icon {
-    fill: $alpha;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+}
+.contacts__link--brand-color {
+  color: $brandColor;
 }
 
 @media screen and (min-width: 768px) {
@@ -112,24 +113,19 @@
       }
     }
     &__contact-box {
-      align-self: flex-start;
+      padding-bottom: 91px;
     }
     &__line {
       bottom: 73px;
     }
     &__copy-rights {
-      width: unset;
       padding-bottom: 18px;
     }
   }
   .socials {
-    &__item {
+    &__icon {
       width: 34px;
       height: 34px;
-      &:focus,
-      &:hover {
-        background-color: $brandColor;
-      }
     }
   }
 }
