@@ -1,6 +1,6 @@
-// OKRĄGŁE BUTTONY
+// CIRCLE BUTTONS
 
-// by wstawić przycisk ze strzałką, wpisać w HTML:
+// to insert an arrow button, type in HTML:
 // <button class="circle-btn"><svg width="5" height="18" class="circle-btn__arrow"><use href="images/icons.svg#icon-arrow-right"></use></svg></button>
 
 .circle-btn {
@@ -32,7 +32,7 @@
   }
 }
 
-// DŁUGIE BUTTONY
+// LONG BUTTONS
 
 .button {
   padding: 0.9em 1.7em;
@@ -50,6 +50,7 @@
     transform: translateY(-3px);
     box-shadow: 1px 1px 7px 1px rgba(212, 20, 67, 0.6);
   }
+  
   &:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -64,6 +65,7 @@
       background-color: $hoverColor;
       box-shadow: 1px 1px 7px 1px rgba(22, 21, 21, 0.6);
     }
+    
     &:active {
       box-shadow: 0 5px 10px rgba(196, 55, 55, 0.2);
     }
@@ -94,7 +96,7 @@
     color: inherit;
   }
 
-  // tworzenie strzałki w buttonie
+  // creating an arrow in a button
   // <svg width="6" height="10" class="button__chevron"><use href="images/icons.svg#icon-Vector-1"></use></svg>
   &__chevron {
     $iconColor: currentColor;
