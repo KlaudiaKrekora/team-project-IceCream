@@ -4,6 +4,7 @@
   &__list {
     list-style: none;
   }
+  
   &__item {
     padding-top: 66px;
     position: relative;
@@ -13,9 +14,11 @@
       margin-bottom: 38px;
     }
   }
+  
   &__heading {
     display: none;
   }
+  
   &__second-heading {
     color: $brandColor;
     font-weight: $thick;
@@ -38,10 +41,12 @@
       width: 33px;
       background-image: url('../images/icon1.png');
     }
+      
     &--image-second::before {
       width: 50px;
       background-image: url('../images/icon2.png');
     }
+      
     &--image-third::before {
       width: 44px;
       background-image: url('../images/icon3.png');
@@ -62,10 +67,12 @@
       gap: 64px;
       flex-wrap: nowrap;
     }
+    
     &__second-heading {
       margin-top: 15px;
       font-size: 3rem;
     }
+    
     &__paragraph {
       font-size: 0.875rem;
       line-height: 1.74;
@@ -79,9 +86,11 @@
     &__list {
       gap: 30px;
     }
+    
     &__second-heading {
       font-size: 3.625rem;
     }
+    
     &__paragraph {
       font-size: 1rem;
     }
@@ -93,9 +102,11 @@
     &--image-first::before {
       background-image: url('../images/icon1@x2.png');
     }
+      
     &--image-second::before {
       background-image: url('../images/icon2@x2.png');
     }
+      
     &--image-third::before {
       background-image: url('../images/icon3@x2.png');
     }
