@@ -66,10 +66,10 @@
     color: $fillerColor;
     align-self: center;
     padding-bottom: 25px;
+  }
 
-    &--heart {
-      color: $brandColorDarker;
-    }
+  &__madewith {
+    display: none;
   }
 }
 .socials {
@@ -93,6 +93,12 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    &--easteregg {
+      padding: 20px 25px;
+      border-radius: 50%;
+      fill: $fillerColor;
+    }
   }
 }
 
@@ -160,6 +166,16 @@
     }
     &__copy-rights {
       padding-bottom: 10px;
+    }
+
+    &__madewith {
+      display: block;
+      text-align: center;
+
+      &--heart {
+        cursor: pointer;
+        color: $brandColorDarker;
+      }
     }
   }
 }
