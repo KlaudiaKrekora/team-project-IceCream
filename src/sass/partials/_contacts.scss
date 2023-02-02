@@ -3,7 +3,7 @@
   position: relative;
   margin-top: 86px;
 
-  &__caption {
+  &__heading {
     display: none;
   }
 
@@ -30,25 +30,24 @@
 
   &__label {
     color: $alpha;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: $regular;
     text-transform: uppercase;
     letter-spacing: 0.04em;
     border-radius: 4px;
     background-color: $accentColor;
     padding: 1px 24px;
-    max-width: 80px;
+    display: inline-block;
     margin-bottom: 25px;
   }
 
   &__label--secondary {
     background-color: $secondaryAccentColor;
-    max-width: 130px;
   }
 
   &__header {
     color: $beta;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: $regular;
     letter-spacing: 0.04em;
     margin-bottom: 10px;
@@ -57,7 +56,7 @@
 
   &__text {
     color: $fillerColor;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: $regular;
     letter-spacing: 0.03em;
     line-height: 1.5;
@@ -71,7 +70,7 @@
 
   &__title {
     color: $beta;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: $regular;
     letter-spacing: 0.04em;
     line-height: 1.8;
@@ -79,13 +78,13 @@
 
   &__time {
     color: $secondaryBrandColor;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: $regular;
     letter-spacing: 0.04em;
     line-height: 1.9;
     text-transform: uppercase;
 
-    &:not(last-of-type) {
+    &:not(:last-of-type) {
       margin-bottom: 10px;
     }
   }
@@ -99,11 +98,10 @@
 
   &__link {
     color: $fillerColor;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: $regular;
     letter-spacing: 0.04em;
     text-decoration: none;
-    cursor: pointer;
     font-style: normal;
   }
 
@@ -118,7 +116,7 @@
   &__button {
     color: $alpha;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: $brandColor;
     border: none;
     border-radius: 22px;
@@ -174,25 +172,23 @@
     }
 
     &__label {
-      font-size: 16px;
+      font-size: 1rem;
       border-radius: 6px;
       padding: 5px 16px;
-      max-width: 73px;
       margin-bottom: 30px;
     }
 
     &__label--secondary {
       background-color: $secondaryAccentColor;
-      max-width: 138px;
     }
 
     &__header {
-      font-size: 14px;
+      font-size: 0.875rem;
       margin-bottom: 14px;
     }
 
     &__text {
-      font-size: 14px;
+      font-size: 0.875rem;
       margin-bottom: 30px;
     }
 
@@ -201,13 +197,13 @@
     }
 
     &__title {
-      font-size: 14px;
+      font-size: 0.875rem;
     }
 
     &__time {
-      font-size: 14px;
+      font-size: 0.875rem;
 
-      &:not(last-of-type) {
+      &:not(:last-of-type) {
         margin-bottom: 16px;
       }
     }
@@ -218,7 +214,7 @@
     }
 
     &__link {
-      font-size: 14px;
+      font-size: 0.875rem;
     }
 
     &__button-group {
@@ -261,12 +257,12 @@
     }
 
     &__header {
-      font-size: 16px;
+      font-size: 1rem;
       margin-bottom: 10px;
     }
 
     &__text {
-      font-size: 16px;
+      font-size: 1rem;
       margin-bottom: 32px;
     }
 
@@ -275,13 +271,13 @@
     }
 
     &__title {
-      font-size: 16px;
+      font-size: 1rem;
     }
 
     &__time {
-      font-size: 16px;
+      font-size: 1rem;
 
-      &:not(last-of-type) {
+      &:not(:last-of-type) {
         margin-bottom: 15px;
       }
     }
@@ -292,7 +288,7 @@
     }
 
     &__link {
-      font-size: 16px;
+      font-size: 1rem;
     }
 
     &__button-group {

@@ -33,7 +33,7 @@
   &__opinion-text {
     position: relative;
     padding: 0 18px;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: $regular;
     line-height: 2.51;
     background-image: repeating-linear-gradient(
@@ -49,7 +49,7 @@
   &__name {
     position: relative;
     margin-top: 52px;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: $regular;
 
     &::before {
@@ -79,6 +79,7 @@
   .reviews__container {
     padding-inline: 74px;
   }
+  
   .customer {
     &__opinion-box {
       margin: 19px auto 24px;
@@ -89,13 +90,13 @@
     }
 
     &__opinion-text {
-      font-size: 14px;
+      font-size: 0.875rem;
       line-height: 2.16;
     }
 
     &__name {
       margin-top: 42px;
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 }
@@ -116,13 +117,13 @@
 
     &__opinion-text {
       padding-bottom: 2px;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 1.86;
     }
 
     &__name {
       margin-top: 34px;
-      font-size: 20px;
+      font-size: 1.25rem;
     }
   }
 }
