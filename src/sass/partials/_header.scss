@@ -73,14 +73,14 @@
     margin-bottom: 20px;
     font-family: $accentFont;
     font-weight: $thick;
-    font-size: 26px;
+    font-size: 1.625rem;
     letter-spacing: 0.04em;
     color: $alpha;
     text-transform: uppercase;
     background-color: transparent;
 
     &--boldred {
-      font-size: 48px;
+      font-size: 3rem;
       color: $brandColor;
       line-height: 0.955;
     }
@@ -111,6 +111,7 @@
 
       &__cta {
         display: block;
+        transition: visibility 0.2s, opacity 0.2s;
       }
 
       .menu-toggle {
@@ -143,10 +144,10 @@
     }
 
     &__title {
-      font-size: 22px;
+      font-size: 1.375rem;
 
       &--boldred {
-        font-size: 34px;
+        font-size: 2.125rem;
         line-height: 0.905;
       }
     }
@@ -175,14 +176,14 @@
     }
 
     &__number {
-      font-size: 28px;
+      font-size: 1.75rem;
       font-family: $accentFont;
       letter-spacing: 0.04em;
       color: $brandColor;
     }
 
     &__text {
-      font-size: 8px;
+      font-size: 0.5rem;
       color: $alpha;
     }
   }
@@ -201,7 +202,7 @@
     &__text {
       width: 114px;
       margin-bottom: 7px;
-      font-size: 8px;
+      font-size: 0.5rem;
       line-height: 1.5;
       color: $alpha;
     }
@@ -277,10 +278,10 @@
     }
 
     &__title {
-      font-size: 38px;
+      font-size: 2.375rem;
 
       &--boldred {
-        font-size: 58px;
+        font-size: 3.625rem;
       }
     }
   }
@@ -304,7 +305,7 @@
     &__text {
       width: 200px;
       margin-bottom: 20px;
-      font-size: 14px;
+      font-size: 0.875rem;
       line-height: 1.4;
     }
 
@@ -332,11 +333,11 @@
     }
 
     &__number {
-      font-size: 46px;
+      font-size: 2.875rem;
     }
 
     &__text {
-      font-size: 14px;
+      font-size: 0.875rem;
     }
   }
 }
