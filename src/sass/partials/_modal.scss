@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   transition: visibility 200ms linear, opacity 200ms linear;
+  z-index: 4;
 }
 .modal {
   position: absolute;
@@ -72,7 +73,6 @@
       right: 8px;
       cursor: pointer;
     }
-
   }
   &__title {
     font-family: $accentFont, sans-serif;
@@ -83,10 +83,10 @@
     color: $alpha;
     text-align: center;
   }
-    &__title--about {
-      @extend .modal__title;
-      color: $brandColor;
-    }
+  &__title--about {
+    @extend .modal__title;
+    color: $brandColor;
+  }
 
   &__subtext {
     font-family: $mainFont, sans-serif;
@@ -109,7 +109,7 @@
     text-align: center;
 
     &--about {
-      color: $fillerColor; 
+      color: $fillerColor;
     }
   }
 }
