@@ -26,6 +26,7 @@
   top: 23px;
   right: 28px;
   color: $alpha;
+  transition: color 0.3s;
 
   &:hover,
   &:focus {
@@ -53,6 +54,7 @@
     font-size: 0.875rem;
     line-height: 18px;
     color: $alpha;
+    transition: color 0.3s;
     text-decoration: none;
 
     &:hover,
