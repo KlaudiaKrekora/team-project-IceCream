@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   transition: visibility 200ms linear, opacity 200ms linear;
+  z-index: 4;
 }
 .modal {
   position: absolute;
