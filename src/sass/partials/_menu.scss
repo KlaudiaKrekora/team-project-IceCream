@@ -68,6 +68,7 @@
       border-bottom: 1px solid $menuBorderColor;
     }
   }
+  
   &__link {
     padding-left: 21px;
     font-weight: 700;
@@ -83,8 +84,6 @@
     }
   }
 }
-
-//TABLET
 
 @media screen and (min-width: 768px) {
   .mobile-nav {
